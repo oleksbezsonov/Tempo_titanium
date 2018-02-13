@@ -1,0 +1,60 @@
+
+".greyText":{
+	font: {
+		fontSize:"12",
+		fontWeight:"regular",
+	},
+	color:"a2a2a2",
+}
+
+".blackText":{
+	font: {
+		fontSize:"20",
+		fontWeight:"regular",
+	},
+	color:"black",
+}
+
+".btnText":{
+	font: {
+		fontSize:"15",
+		fontWeight:"regular",
+	},
+	color:"black",
+}
+
+".tabText":{
+	font: {
+		fontSize:"28",
+	},
+	color:"0077f8",
+}
+
+".tableTitle" : {
+ 	font: {
+		fontSize:"18"	
+		},
+	color:"black",
+}
+
+".smallTitle" : {
+ 	font: {
+		fontSize:"15"	
+		},
+	color:"black",
+}
+
+".buttonText" : {
+ 	font: {
+		fontSize:"13"	
+		},
+	color:"black",
+}
+
+".timeText" : {
+ 	font: {
+		fontSize:"13"	
+		},
+	color:"white",
+}
+

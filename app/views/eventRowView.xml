@@ -1,0 +1,13 @@
+<Alloy>
+	<View layout="vertical" left="5" width="150" height="90%" borderRadius="25" backgroundColor="white">
+		<View top="0" height="70%" width="Ti.UI.FILL" id="mediaView">
+			<ActivityIndicator style="Ti.UI.ActivityIndicatorStyle.DARK" id="activityIndicator"/>
+			<ImageView id="eventImage" borderRadius="25" width="Ti.UI.FILL" height="Ti.UI.FILL">
+				<ImageView id="isSelected" isChecked="false" width="25%" top="0" right="0" image="images/imageEvent.png"></ImageView>
+			</ImageView>
+		</View>
+		<View top="0" height="Ti.UI.SIZE" width="Ti.UI.FILL" backgroundColor="white">
+			<Label textAlign="left" id="eventTitleLbl" class="imgDesc" top="5">Saturday night spl</Label>
+		</View>
+	</View>	
+</Alloy>

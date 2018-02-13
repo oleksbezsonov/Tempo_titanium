@@ -1,0 +1,55 @@
+<Alloy>
+	<Window>
+		<View top="0" backgroundColor="33bdea" width="Ti.UI.FILL" height="65" id="navigBar">
+			<View id="back" width="Ti.UI.SIZE" left="0" >
+				<ImageView id="backBtn" image="/images/back.png" width="12" bottom="13" left="14" ></ImageView>
+				<Label id="leftTitle" class="leftRightTitle" bottom="15" left="29">Create event</Label>
+			</View>
+			<Label id="centrTitle" class="navBarHeading" bottom="12" left="42%">Set venue</Label>
+			<ImageView id="refreshBtn" bottom="15" width="22" visible="false"  right="25" image="/images/refresh.png"></ImageView>
+	     </View>
+		
+
+		<View layout="vertical" backgroundColor="white" top="65" width="Ti.UI.FILL" height="Ti.UI.FILL">
+			<View id="searchBtn" backgroundColor="white" top="1" width="Ti.UI.FILL" height="50" bubbleParent="false" >
+				<TextField id="search" class="searchText" left="10" right="80" hintText="Search" borderRadius="7" hintTextColor="#d7d7da" backgroundColor="efefef" width="Ti.UI.FILL" height="34"></TextField>
+				<Label id="cancelBtn"  color="#157efb" right="20" top="12">Cancel</Label>
+				<ImageView height="15" width="15" left="25" image="/images/explore.png" />
+			</View> 
+			<View height="65%" id="viewOfMap"></View>
+			<View layout="vertical" height="45%" top="0" backgroundColor="white" width="Ti.UI.FILL">
+				<View id="setEventVenue" width="80%" top="20" height="46" borderRadius="23" backgroundColor="e7f2f4" borderWidth="1" borderColor="9ec8dd">
+					<ImageView width="10%" image="images/setVenueIcon.png" left="15"></ImageView>
+					<Label class="heading" top="7" left="53">Set this as event venue</Label>
+					<Label id="locationTxt" class="desc" left="53" top="20" width="Ti.UI.FILL" height="20" bottom="7"></Label>
+				</View>
+				
+				<Label class="venueHeading" top="17" height="0" visible="false" left="15">recent venues</Label>
+				
+				<TableView top="20" height="0" backgroundColor="white" width="Ti.UI.FILL">
+					<TableViewSection>
+						<TableViewRow top="20" backgroundColor="white" height="50">
+							<Label class="heading" top="5" left="23%">Lobo's Cafe</Label>
+		            		<Label class="desc" top="25" left="23%">38th East Street, New York City, NY, USA</Label>
+		           			<ImageView height="Ti.UI.SIZE" width="30" left="30" image="/images/locationMarker.png" />
+						</TableViewRow>
+						
+						<TableViewRow top="20" backgroundColor="white" height="50">
+							<Label class="heading" top="5" left="23%">Cezar's Shack</Label>
+		            		<Label class="desc" top="25" left="23%">238th South Street, New York City, NY, USA</Label>
+		           			<ImageView height="Ti.UI.SIZE" width="30" left="30" image="/images/locationMarker.png" />
+						</TableViewRow>
+						
+					</TableViewSection>
+				</TableView>
+				
+			</View>
+			
+		</View>
+		
+		<TableView top="115" visible="false" height="40%" id="autoCompleteTableView" backgroundColor="white" width="Ti.UI.FILL">
+			
+		</TableView>
+		
+	</Window>
+</Alloy>

@@ -1,0 +1,28 @@
+<Alloy>
+	<Window>
+		<View layout="vertical" width="Ti.UI.FILL" height="Ti.UI.FILL" top="65" backgroundColor="white">
+	    	<View backgroundColor="white" width="Ti.UI.FILL" height="25%" top="0">
+	    		<View width="140" height="140" backgroundColor="white" left="20">
+	    			<ImageView image="images/profilePic.png"></ImageView>
+	    			<ImageView width="50" image="images/firelogo.png" top="0" right="1"></ImageView>
+	    		</View> 
+	    		
+	    		<View width="180" height="60" right="15" top="30" backgroundColor="white">
+	    			<Label class="blackText" top="15" left="25">18</Label>
+	    			<Label class="greyText" top="35" left="20">Events</Label>
+	    			<View height="50" backgroundColor="a2a2a2" width="1" left="70"></View>
+	    			<Label class="blackText" top="15" right="25">12,654</Label>
+	    			<Label class="greyText" top="35" right="19">Tempo rating</Label>
+	    		</View>
+	    		
+	    		<Label class="btnText" textAlign="center" width="190" height="30" right="15" borderRadius="15" backgroundColor="e5f3f6" borderWidth="1" bottom="15" borderColor="91bad3">Edit profile</Label>
+	    	</View>
+	    	
+	    	<ImageView top="70" width="35%" image="images/hide.png"></ImageView>
+	    	<Label class="privateLbl" textAlign="center" top="45">This is a private account.</Label>
+	    	<Label class="msgLable" left="40" right="40" textAlign="center" top="10">To view this account, please send request by tapping on follow.</Label>
+	    	
+	    	
+   		 </View>	
+	</Window>
+</Alloy>

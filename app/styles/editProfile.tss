@@ -1,0 +1,22 @@
+
+
+".heading" : {
+  font: {
+		fontSize:"14",
+	},
+	color:"6a6a6a"
+}
+
+".otherText" : {
+  font: {
+		fontSize:"17",
+	},
+	color:"black"
+}
+
+".genderText" : {
+  font: {
+		fontSize:"17",
+	},
+	color:"3c3c3c"
+}

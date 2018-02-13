@@ -1,0 +1,22 @@
+
+".detectTxt" : {
+  font:{
+  	fontSize:"17",
+  	fontWeight:"regular"
+  },
+  color:"1ca144"
+}
+
+".small" : {
+  font:{
+  	fontSize:"15",
+  	fontWeight:"regular"
+  },
+  color:"89959b"
+}
+
+".city" : {
+  color:"303030",
+  top:"10",
+  height:"40"
+}

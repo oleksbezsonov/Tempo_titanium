@@ -1,0 +1,24 @@
+
+".imageDesc":{
+	font: {
+		fontSize:"20",	
+	},
+}
+
+".timeDesc":{
+	font: {
+		fontSize:"12",	
+	},
+}
+
+".hostName":{
+	font: {
+		fontSize:"14",	
+	},
+}
+
+".hostText":{
+	font: {
+		fontSize:"11",	
+	},
+}

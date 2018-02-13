@@ -1,0 +1,41 @@
+
+
+".greyText":{
+	font: {
+		fontSize:"12",
+		fontWeight:"regular",
+	},
+	color:"a2a2a2",
+}
+
+".blackText":{
+	font: {
+		fontSize:"20",
+		fontWeight:"regular",
+	},
+	color:"black",
+}
+
+".btnText":{
+	font: {
+		fontSize:"15",
+		fontWeight:"regular",
+	},
+	color:"black",
+}
+
+".privateLbl":{
+	font: {
+		fontSize:"26",
+		fontWeight:"regular",
+	},
+	color:"6a6a6a",
+}
+
+".msgLable":{
+	font: {
+		fontSize:"15",
+		fontWeight:"regular",
+	},
+	color:"6a6a6a",
+}

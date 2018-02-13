@@ -1,0 +1,41 @@
+
+".bckgrndGradient" : {
+	backgroundGradient: {
+        type: 'linear',
+        startPoint: { x: '0%', y: '0%' },
+        endPoint: { x: '0%', y: '100%' },
+        colors: [ { color: '9de9ff', offset: 0.25 }, { color: '2288d3', offset: 1.00 } ],
+    }	
+}
+
+".lableText" : {
+  font: {
+		fontSize:"10",
+	},
+	color:"9a9d9e"
+}
+
+".credentialText" : {
+  font: {
+		fontSize:"16",
+	},
+	color:"black",
+	width:"70%",
+	height:"8%",
+	top:"1",
+	left:"18%",
+}
+
+".newText" : {
+  font: {
+		fontSize:"12",
+	}
+}
+
+".signUp" : {
+  font: {
+		fontSize:"12",
+	},
+	color:"00b4e4"
+}
+

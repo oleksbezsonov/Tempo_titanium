@@ -1,0 +1,36 @@
+
+
+
+".moreText":{
+	font: {
+		fontSize:"15",	
+	},
+	color:"black",
+}
+
+".imageDesc":{
+	font: {
+		fontSize:"14",	
+	},
+	color:"black",
+}
+
+".timeDesc":{
+	font: {
+		fontSize:"10",	
+	},
+	color:"black",
+}
+
+
+".ratingText":{
+	font: {
+		fontSize:"16",
+		fontWeight:"bold",	
+	},
+	color:"black",
+}
+
+// ".imgHt":{
+	// height:Alloy.Globals.imageHeight,
+// }

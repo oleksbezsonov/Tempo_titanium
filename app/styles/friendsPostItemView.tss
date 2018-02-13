@@ -1,0 +1,13 @@
+".imageDesc":{
+	font: {
+		fontSize:"14",	
+	},
+	color:"black",
+}
+
+".timeDesc":{
+	font: {
+		fontSize:"10",	
+	},
+	color:"black",
+}

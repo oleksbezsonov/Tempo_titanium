@@ -1,0 +1,14 @@
+
+".seenText" : {
+  font: {
+		fontSize:"18",
+	},
+	color:"white"
+}
+
+".otherText" : {
+  font: {
+		fontSize:"10",
+	},
+	color:"white"
+}

@@ -1,0 +1,69 @@
+<Alloy>
+	<Window navBarHidden="true" backgroundColor="white">
+		<View top="0" backgroundColor="33bdea" width="Ti.UI.FILL" height="65" id="navigBar">
+			<View zIndex="999" id="backBtn" width="0" height="30" top="24" left="5">
+				<ImageView height="20"  left="2" image="images/back.png"></ImageView>
+				<Label  class="feedText" left="15" >Back</Label>
+			</View>
+			<Label id="userFullname" class="navBarHeading" width="50%" height="30" ellipsize=" Ti.UI.TEXT_ELLIPSIZE_TRUNCATE_END"  bottom="12" textAlign="center"></Label>
+			<ImageView id="searchBtn"  width="25" bottom="12" right="60" image="/images/searchIcon.png"></ImageView>
+			<ImageView id="settingBtn"  bottom="12" width="25" right="17" image="/images/settingsProfile.png"></ImageView>
+			<SearchBar id="search" bubbleParent="false" visible="false" barColor="c5c5c9" showCancel="true" cancelButtonTitle="Cancel" height="43" bottom="0" backgroundColor="white" />
+	     </View>
+		 
+    	<View layout="vertical" width="Ti.UI.FILL" height="Ti.UI.FILL" top="65" backgroundColor="white">
+			<View width="Ti.UI.FILL" height="130" top="5">
+				<View width="120" height="120" backgroundColor="white" left="10">
+					<ImageView id="avatar" width="100" borderColor="727272" borderWidth="0.5" height="100" borderRadius="50" image="images/avatar.png"></ImageView>
+					<ImageView width="50" image="images/firelogo.png" top="10" right="0"></ImageView>
+				</View> 
+				<View width="60%" height="120" right="15" top="10" layout="vertical" backgroundColor="white">
+					<View width="Ti.UI.FILL" height="60" right="15" top="10" layout="horizontal" backgroundColor="white">
+						<View layout="vertical" height="Ti.UI.FILL" width="48%">
+							<Label id="eventCount"  class="blackText" textAlign="center" top="10" ></Label>
+							<Label class="greyText" textAlign="center" top="5">Events</Label>
+						</View>
+						<View height="50" backgroundColor="a2a2a2" width="1" left="1"></View>
+						<View layout="vertical" height="Ti.UI.FILL" width="48%">
+							<Label id="tempoRating" class="blackText" textAlign="center" top="10"></Label>
+							<Label class="greyText" top="5">Tempo rating</Label>
+						</View>
+					</View>
+					<Label id="editBtn" class="btnText" textAlign="center" top="5" width="80%" height="30" borderRadius="15" backgroundColor="e5f3f6" borderWidth="1" bottom="3%" borderColor="91bad3">Edit profile</Label>
+				</View>
+				<View id="followBtn" width="60%" height="0" bottom="10" right="15">
+					<Label class="btnText" textAlign="center" width="80%" height="30" borderRadius="15" borderColor="94bcd3" backgroundColor="e5f2f5"> Follow </Label>
+				</View>
+			</View>
+    	
+        <TabbedBar id="tabbar" platform="ios" index="0" backgroundColor="28bdea" top="15" height="33" width="90%">
+            <Labels class="tabText">
+                <Label>Posts</Label>
+                <Label>Events</Label>
+                <Label>Friends</Label>
+            </Labels>
+        </TabbedBar>
+        
+        
+        <ScrollView id="posts" top="15" backgroundColor="white" layout="vertical" borderRadius="5" scrollType="vertical" width="99.9%" height="Ti.UI.FILL">
+        	<Widget id="photogrid" src="de.manumaticx.photogrid" />
+        </ScrollView>      
+        <TableView id="eventsTableViewRecords"  top="0" height="Ti.UI.FILL">
+			<RefreshControl id="refreshCtrl"></RefreshControl>
+		</TableView>
+        
+        
+        <TableView id="friends" top="0" height="Ti.UI.FILL">
+		
+			<!-- <HeaderView>
+				<View id="searchBtn2" backgroundColor="white" top="5" width="Ti.UI.FILL" height="50" bubbleParent="false" >
+					<TextField id="searchBr" class="searchText" left="10" right="80" hintText="Search friends" borderRadius="7" hintTextColor="9c9c9c" backgroundColor="efefef" width="Ti.UI.FILL" height="34"></TextField>
+					<Label class="cancelText" color="#157efb" right="20" top="12">Cancel</Label>
+					<ImageView height="15" width="15" left="25" image="/images/explore.png" />
+				</View>
+			</HeaderView> -->
+				
+		</TableView>
+        </View>
+    </Window>    
+</Alloy>

@@ -1,0 +1,11 @@
+<Alloy>
+	<Window class="container" backgroundColor="white">
+		<Button id="closeBtn" title="Back" left="20" top="40"></Button>
+		<Button id="doneBtn" title="Done" right="20" top="40"></Button>
+		<ImageView id="img" height="auto" width="100%" ></ImageView>
+	
+	    <View bottom="0" id="bottomBar" backgroundColor="white" height="44" width="Ti.UI.FILL">
+    		<Button image ="/images/TabPhoto.png" id="cameraBtn" top="24%"></Button>
+         </View>
+	</Window>
+</Alloy>

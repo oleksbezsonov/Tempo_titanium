@@ -1,0 +1,15 @@
+<Alloy>
+	<View layout="vertical" left="5" width="180" height="200"  top="5" borderRadius="25" backgroundColor="white">
+		<View touchEnabled="false" top="0" height="70%" width="Ti.UI.SIZE" id="mediaView">
+			<ActivityIndicator style="Ti.UI.ActivityIndicatorStyle.DARK" id="activityIndicator"/>
+			<ImageView borderColor="727272" borderWidth="0.5" id="eventImage"  borderRadius="25" width="Ti.UI.FILL" height="Ti.UI.FILL"></ImageView>
+		</View>
+		<View touchEnabled="false" top="0" height="Ti.UI.FILL" width="Ti.UI.FILL" backgroundColor="white">
+			<View height="40" width="40" borderRadius="20" left="0" backgroundImage="/images/tempoRating.png">
+				<Label id="eventRatingLbl" class="smallRate" color="white">96</Label>
+			</View>
+			<Label class="imageDesc"  id="eventTitleLbl" left="23%" height="20" top="20%">Saturday night spl</Label>
+			<Label class="timeDesc" id="eventDateLbl" left="23%" top="50%"></Label>
+		</View>
+	</View>
+</Alloy> 

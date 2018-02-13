@@ -1,0 +1,9 @@
+<Alloy>
+ <TableViewRow top="0" backgroundColor="white" height="80">
+	<Label id="nameLbl" class="tableTitle" top="14" width="44%" height="30" ellipsize=" Ti.UI.TEXT_ELLIPSIZE_TRUNCATE_END" left="75">Justina Hemminger</Label>
+	<Label id="usernameLbl" class="smallTitle" bottom="18" width="45%" height="30"  ellipsize=" Ti.UI.TEXT_ELLIPSIZE_TRUNCATE_END" left="75">@justina.hemminger</Label>
+	<Label id="followBtn" class="buttonText" height="35" width="30%" right="15" borderRadius="17.5" borderColor="94bcd3" backgroundColor="e5f2f5" textAlign="center">Follow</Label>
+
+	<ImageView id="userAvatarImg" height="Ti.UI.SIZE" borderColor="727272" borderWidth="0.5" width="60" height="60" borderRadius="30" left="10" image="/images/avatar.png" />
+</TableViewRow>
+</Alloy>

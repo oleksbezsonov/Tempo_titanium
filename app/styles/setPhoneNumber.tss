@@ -1,0 +1,31 @@
+
+
+".phoneText" : {
+  font: {
+		fontSize:"16",
+	},
+	color:"black",
+	width:"70%",
+	// height:"8%",
+	left:"30%",
+}
+
+".smallText" : {
+  font: {
+		fontSize:"13",
+	},
+	color:"545454",
+	textAlign:"center",
+	left:"10%" ,
+	right:"10%", 
+	top:"20",
+}
+
+
+".selectCountry" : {
+  font: {
+		fontSize:"16",
+		fontWeight:"bold"
+	},
+	color:"0044a6",
+}

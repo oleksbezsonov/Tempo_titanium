@@ -1,0 +1,93 @@
+<Alloy>
+	<Window navBarHidden="true">
+		
+		<View top="0" backgroundColor="33bdea" width="Ti.UI.FILL" height="65" id="navigBar">
+			<View id="back" width="Ti.UI.SIZE" left="0">
+				<ImageView id="backBtn" image="/images/back.png" width="10" bottom="15" left="14" ></ImageView>
+				<Label id="leftTitle" class="leftRightTitle" bottom="15" left="29">Back</Label>
+			</View>
+			
+			<Label id="centrTitle" class="navBarHeading" bottom="12" textAlign="center">Create event</Label>
+			<Label id="rightTitle" onClick="createEvent" class="leftRightTitle" right="17" bottom="15">Create!</Label>
+	     </View>
+		
+		<View layout="vertical" top="65" width="Ti.UI.FILL" height="Ti.UI.FILL" backgroundColor="white">
+			<TableView top="5">
+				<TableViewRow top="5" height="Ti.UI.SIZE">
+					<Label class="eventTitle" top="10" left="20">EVENT DETAILS</Label>
+				</TableViewRow>
+				
+				<TableViewRow top="5" height="Ti.UI.SIZE">
+					<View top="3" backgroundColor="white" width="95%" left="34" height="52">
+						<Label class="eventFields" top="5" left="0">Title</Label>
+						<ImageView id="camImg" image="images/photoCamera.png" top="15" right="15%"></ImageView>
+						<TextField id="titleTxt" width="80%" height="25" class="eventFields" top="25" left="0" value=""></TextField>
+						<View height="1" bottom="0" left="0" backgroundColor="86eeff" width="85%"></View>
+					</View>
+				</TableViewRow>
+				<TableViewRow top="5" height="Ti.UI.SIZE">
+					<View top="10" backgroundColor="white" width="95%" left="34" height="52">
+						<Label class="eventFields" top="5" left="0">Description</Label>
+						<TextField id="descTxt" width="80%" height="25" class="info" top="25" left="0" maxLength="80" value=""></TextField>
+						<View height="1" bottom="0" left="0" backgroundColor="86eeff" width="85%"></View>
+					</View>
+				</TableViewRow>
+				<TableViewRow top="5" height="Ti.UI.SIZE">
+						<View top="10" backgroundColor="white" width="95%" left="34" height="85">
+							<Label class="eventFields" top="5" left="0">Date & Time</Label>
+							<Label class="time" top="30" left="0">Start Time:</Label>
+							<TextField id="startDateTxt" onClick="showDatePicker" editable="false" width="80%" height="25" class="info" top="28" left="74" maxLength="80" value="Select Start Date"></TextField>
+							<Label class="time" top="62" left="0">End Time:</Label>
+							<TextField id="endDateTxt" onClick="showDatePicker" editable="false" width="80%" height="25" class="info" top="60" left="74" maxLength="80" value="Select End Date "></TextField>
+							<View height="1" bottom="0" left="0" backgroundColor="86eeff" width="85%"></View>
+						</View>
+				</TableViewRow>
+				<TableViewRow top="5" height="Ti.UI.SIZE">
+					<View id="venueSet" top="10" backgroundColor="white" width="95%" left="34" height="52">
+						<Label class="eventFields" top="5" left="0">Venue</Label>
+						<TextField editable="false" id="addressTxt" width="80%" height="25" class="info" top="25" left="0" maxLength="80" value=""></TextField>
+						<ImageView right="15%" width="10" top="10" image="images/forwardArrow.png"></ImageView>
+						<View height="1" bottom="0" left="0" backgroundColor="86eeff" width="85%"></View>
+					</View>
+				</TableViewRow>
+				<TableViewRow top="5" height="Ti.UI.SIZE">
+					<View top="10" backgroundColor="white" width="95%" left="34" height="52">
+						<Label class="eventFields" top="13" left="0">Make this event public</Label>
+						 <Switch id="isPublic" value="true" right="15%" top="10"/>
+						<View height="1" bottom="0" left="0" backgroundColor="86eeff" width="85%"></View>
+					</View> 
+				</TableViewRow>
+				<TableViewRow top="5" height="Ti.UI.SIZE">
+					<Label class="eventTitle" top="13" left="20">INVITE GUESTS</Label>
+				</TableViewRow>
+				<TableViewRow top="5" height="Ti.UI.SIZE">
+					<View id="invitePpl" top="15" backgroundColor="white" width="95%" left="34" height="60">
+						<Label class="eventFields" top="13" left="0">Invite people</Label>
+						<ImageView right="15%" width="10" top="13" image="images/forwardArrow.png"></ImageView>
+						<Label class="smallText" id="guestList" textAlign="left" left="0" top="35"></Label>
+						<View height="1" bottom="0" left="0" backgroundColor="86eeff" width="85%"></View>
+					</View> 
+				</TableViewRow>
+				<TableViewRow top="5" height="Ti.UI.SIZE">
+					<View top="10" backgroundColor="white" width="95%" left="34" height="50">
+						<Label class="eventFields" top="13" left="0">Guests can invite friends</Label>
+						 <Switch id="isGuestInviteAllowed" value="true" right="15%" top="10"/>
+						<View height="1" bottom="0" left="0" backgroundColor="86eeff" width="85%"></View>
+					</View>
+				</TableViewRow>
+				<TableViewRow top="5" height="Ti.UI.SIZE">
+					<View id="addCohost" top="10" backgroundColor="white" width="95%" left="34" height="60">
+						<Label class="eventFields" top="13" left="0">Add co-hosts</Label>
+						<ImageView right="15%" width="10" top="13" image="images/forwardArrow.png"></ImageView>
+						<Label class="smallText" id="coHostList" textAlign="left" left="0" top="35"></Label>
+						<View height="1" bottom="0" left="0" backgroundColor="86eeff" width="85%"></View>
+					</View>
+				</TableViewRow>
+				<TableViewRow top="5"  layout="horizontal" width="Ti.UI.FILL" id="deleteRow">
+					<Label id="deleteBtn" left="25%" class="btnText" >Delete Event</Label>
+				</TableViewRow>
+
+			</TableView>
+		</View> 
+	</Window>
+</Alloy> 

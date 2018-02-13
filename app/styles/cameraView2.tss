@@ -1,0 +1,7 @@
+
+".timerText" : {
+ 	font: {
+		fontSize:"12"	
+		},
+	color:"69e6fd",
+}

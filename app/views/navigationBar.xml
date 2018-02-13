@@ -1,0 +1,24 @@
+<Alloy>
+		<View top="0" backgroundColor="33bdea" width="Ti.UI.FILL" height="65" id="navigBar">
+			<ImageView id="addBtn" image="/images/addEventButton.png" width="20" bottom="15" left="15" ></ImageView>
+			
+			<View id="back">
+				<ImageView id="backBtn" image="/images/backWhite.png" width="12" bottom="15" left="10" ></ImageView>
+				<Label id="leftTitle" class="leftRightTitle" bottom="17" left="23">left title</Label>
+			</View>
+			
+			<View id="selectCity" width="37%" left="30%" bottom="10" height="60%">
+				<Label id="centrTitle" class="navBarHeading" bottom="5" left="2%" >New York City</Label>
+				<ImageView id="dropBtn" width="10" bottom="13" left="79%" image="/images/dropDown.png"></ImageView>
+			</View> 
+			
+			<ImageView id="searchBtn" bottom="15" right="75" image="/images/searchIcon.png"></ImageView>
+			<Label id="rightTitle" class="leftRightTitle" right="17" bottom="15">right title</Label>
+			<ImageView id="settingBtn" bottom="14" width="25" right="30" image="/images/setting.png"></ImageView>
+			
+			<View width="Ti.UI.SIZE" right="12">
+				<ImageView id="notify" bottom="15" image="/images/notifyIcon.png"></ImageView>
+				<View id="redDot" backgroundColor="red" width="10" height="10" borderRadius="5" right="0" bottom="30"></View>
+			</View>
+	     </View>
+</Alloy>

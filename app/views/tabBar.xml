@@ -1,0 +1,16 @@
+<Alloy>
+	<View id="tabView" backgroundColor="2caedf" bottom="0" width="Ti.UI.FILL" height="60" layout="horizontal">
+        	<View  width="24%" height="Ti.UI.FILL" id="captureTab">
+        		<ImageView id="captureIcon" top="10"  image="/images/camera.png"/>
+        	</View>
+        	<View width="24%" left="1%" height="Ti.UI.FILL" id="feedTab">
+        		<ImageView id="feedIcon" top="10" image="/images/feed.png" />
+        	</View>
+        	<View width="24%" left="1%" height="Ti.UI.FILL" id="manageEvntsTab">
+        		<ImageView id="manageEventsIcon" top="10" image="/images/manageEvnts.png" />
+        	</View>
+        	<View width="24%" height="Ti.UI.FILL" left="1%" id="profileTab" >
+        		<ImageView id="profile" top="10" image="/images/profileIcon.png" />
+        	</View>	
+        </View>
+</Alloy>

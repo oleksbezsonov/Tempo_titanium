@@ -1,0 +1,23 @@
+<Alloy>
+	<Window navBarHidden="true" backgroundColor="white">
+		<View top="0" backgroundColor="33bdea" width="Ti.UI.FILL" height="65" id="navigBar">
+			<ImageView id="addBtn" image="/images/addIcon.png" width="25" bottom="12" left="15" ></ImageView>			
+			<Label id="centrTitle" class="navBarHeading" bottom="12" textAlign="center">Manage Your Events</Label>
+			<View id="notifyIcon" width="Ti.UI.SIZE" right="12">
+				<ImageView id="notify" width="30" height="30" bottom="10" image="/images/notifs.png"></ImageView>
+				<View id="redDot" backgroundColor="red" width="10" height="10" borderRadius="5" right="0" bottom="30"></View>
+			</View>
+	     </View>
+		
+	
+		<View width="99.9%" height="Ti.UI.SIZE" top="70" backgroundColor="white">
+			<View width="95%" height="50" top="5" left="0" backgroundColor="white">
+					<Label class="title" top="5" left="10">Manage your events</Label>
+					<View height="2" bottom="8" width="90%" backgroundColor="aef3ff"></View>
+				</View>
+				<TableView id="tableViewRecords" layout="vertical" backgroundColor="white">
+						<RefreshControl id="refreshCtrl"></RefreshControl>
+				</TableView>
+		</View>
+	</Window>>	
+</Alloy>

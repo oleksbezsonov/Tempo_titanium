@@ -1,0 +1,37 @@
+<Alloy>
+	<Window navBarHidden="true" backgroundColor="white">
+		<View top="0" backgroundColor="33bdea" width="Ti.UI.FILL" height="65" id="navigBar">
+			<View id="back" width="Ti.UI.SIZE" left="0">
+				<ImageView id="backBtn" image="/images/back.png" width="10" bottom="15" left="14" ></ImageView>
+				<Label id="leftTitle" class="leftRightTitle" bottom="15" left="29">Back</Label>
+			</View>
+			<Label id="titleLbl" class="navBarHeading" bottom="13" width="Ti.UI.SIZE" height="Ti.UI.SIZE"></Label>
+
+	     </View>
+	     
+		<View width="Ti.UI.FILL" height="Ti.UI.FILL" top="70" backgroundColor="white">
+			
+			<View id="searchBtn" backgroundColor="white" top="1" width="Ti.UI.FILL" height="50" bubbleParent="false" >
+				<TextField id="search" class="searchText" left="10" right="80" hintText="Search" borderRadius="7" hintTextColor="#d7d7da" backgroundColor="efefef" width="Ti.UI.FILL" height="34"></TextField>
+				<Label id="cancelBtn"  color="#157efb" right="20" top="12">Cancel</Label>
+				<ImageView height="15" width="15" left="25" image="/images/explore.png" />
+			</View>
+			
+			<TabbedBar id="tabbar" platform="ios" index="0" backgroundColor="28bdea" top="65" height="33" borderRadius="18" width="90%">
+				<Labels class="tabText">
+					<Label>Events</Label>
+					<Label>Users</Label>
+				</Labels>
+        	</TabbedBar>
+        	
+			<TableView id="tableViewRecordsEvents" layout="vertical" height="Ti.UI.FILL" top="120" backgroundColor="white">
+				
+			</TableView>
+			
+			<TableView layout="vertical" id="tableViewRecordsUsers" height="0" top="120">
+			
+			</TableView>
+			
+		</View>
+	</Window>
+</Alloy>

@@ -1,0 +1,17 @@
+<Alloy>
+	<Window>
+		<Require id="navigation" src="navBar"></Require>
+		<View width="Ti.UI.FILL" height="Ti.UI.FILL" top="10%" backgroundColor="white" layout="vertical">
+			<Label class="headingText" top="10" textAlign="center">What's your name?</Label>
+			<ImageView top="15" width="90%" image="/images/headerDivide.png"></ImageView>
+			<Label class="lableText" top="25" left="15%">First Name</Label>
+			<TextField id="firstnameTxt" class="infoText" value=""></TextField>
+			<View height="1" top="0" backgroundColor="86eeff" width="70%"></View>
+			<Label class="lableText" top="2%" left="15%">Last Name</Label>
+			<TextField id="lastnameTxt" class="infoText" value=""></TextField>
+			<View height="1" top="0" backgroundColor="86eeff" width="70%"></View>
+			<Label id="acceptBtn" height="45" width="70%" top="25" borderRadius="22.5" backgroundColor="2dc1ee" textAlign="center">Accept & Sign Up</Label>
+			<Label class="smallText">By tapping Accept & Sign Up, you agree to the Terms of Services and Privacy Policy.</Label>
+		</View>
+	</Window>
+</Alloy>̧

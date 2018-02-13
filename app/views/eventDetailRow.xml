@@ -1,0 +1,25 @@
+<Alloy>
+	<View id="imageRecord" if="$.args.record.mediaType=='image'" height="Ti.UI.FILL" width="Ti.UI.FILL" top="0" backgroundColor="black">
+		<!-- <ImageView id="eventImg" top="0" width="Ti.UI.FILL" height="Ti.UI.FILL" > -->
+		<ImageView top="0" id="eventImg"  height="Ti.UI.FILL" width="Ti.UI.FILL">
+			<View height="60" width="60" borderRadius="30" bottom="30" backgroundImage="/images/tempoRating.png">
+				<Label id="rating" class="rateText">96</Label>
+			</View>
+			<ImageView id="likeBtn" bubbleParent="false"  width="8%" right="60" bottom="25" image="images/like.png" onClick="likeUnlike"></ImageView>
+			<Label id="likeCount" class="likeText" right="20" bottom="25"></Label>
+		</ImageView>
+		<ActivityIndicator zIndex="99999" style="Ti.UI.ActivityIndicatorStyle.DARK" id="activityIndicator"/>
+	</View>
+	
+	<View id="videoRecord" backgroundColor="gray" height="Ti.UI.FILL" width="Ti.UI.FILL" top="0" if="$.args.record.mediaType =='video'">
+		<VideoPlayer mediaTypes="Titanium.Media.VIDEO_MEDIA_TYPE_VIDEO" fullscreen="false" showsControls="false" id="videoPlayer" width="Ti.UI.FILL" ns="Ti.Media" height="Ti.UI.FILL" mediaControlStyle="Titanium.Media.VIDEO_CONTROL_NONE" autoplay="true">
+        
+	         <View height="60" width="60" borderRadius="30" bottom="30" backgroundImage="/images/tempoRating.png">
+				<Label id="rating"  class="rateText">96</Label>
+			</View>
+			<ImageView  bubbleParent="false" id="likeBtn" width="8%" right="60" bottom="25" image="images/like.png" onClick="likeUnlike"></ImageView>
+			<Label id="likeCount" class="likeText" right="13" bottom="27"></Label>
+		</VideoPlayer> 
+		<ActivityIndicator zIndex="99999" style="Ti.UI.ActivityIndicatorStyle.DARK" id="activityIndicator"/>
+	</View>
+</Alloy>

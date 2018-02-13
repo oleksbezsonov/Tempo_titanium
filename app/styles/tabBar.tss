@@ -1,0 +1,8 @@
+
+
+".navBar":{
+	font: {
+		fontSize:"12",	
+	},
+	textAlign:"center",
+}

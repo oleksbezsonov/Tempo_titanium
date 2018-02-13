@@ -1,0 +1,24 @@
+<Alloy>
+	<Window navBarHidden="true" backgroundColor="white">
+		<View top="0" backgroundColor="33bdea" width="Ti.UI.FILL" height="65" id="navigBar">
+			<View id="back" width="Ti.UI.SIZE" left="0">
+				<ImageView id="backBtn" image="/images/back.png" width="10" bottom="15" left="14" ></ImageView>
+				<Label id="leftTitle" class="leftRightTitle" bottom="15" left="29">Back</Label>
+			</View>
+				
+			<Label id="titleLbl" class="navBarHeading" bottom="10" textAlign="center">New York City</Label>
+
+	     </View>
+	     
+		<View width="Ti.UI.FILL" height="Ti.UI.FILL" top="70" backgroundColor="white">
+			<View width="95%" height="50" top="5" left="0" backgroundColor="white">
+				<Label class="title" top="5" left="10">Trending in New York City</Label>
+				<View height="2" bottom="8" width="90%" backgroundColor="aef3ff"></View>
+			</View>
+			<TableView id="tableViewRecords" layout="vertical" backgroundColor="white">
+				
+
+			</TableView>
+		</View>
+	</Window>
+</Alloy>

@@ -1,0 +1,7 @@
+<Alloy>
+	<TableViewRow top="8" backgroundColor="white" height="80">
+		<Label class="userName" textAlign="center" left="70" width="60%">Justina Hemminger</Label>
+		<ImageView height="Ti.UI.SIZE" width="23%" left="10" borderColor="727272" borderWidth="0.5" width="50" height="50" borderRadius="25" image="/images/avatar.png" />
+		<Button id="radioBtn" status="true" class="radioButton" right="7%"></Button>
+	</TableViewRow>
+</Alloy>

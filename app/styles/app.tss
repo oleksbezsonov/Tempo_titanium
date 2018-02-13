@@ -1,0 +1,161 @@
+/*
+
+This is your global styles file. Selectors and rules you define
+here will be applied throughout your app. However, these rules
+have the lowest priority of any style settings.
+
+For more information, see the "Style Priorities" section of
+http://docs.appcelerator.com/platform/latest/#!/guide/Alloy_Styles_and_Themes
+
+For example, the following would apply to all labels, windows,
+and text fields (depending on platform) in your app unless you
+overrode the settings with other TSS, XML, or JS settings:
+
+'Label[platform=android,windows]': {
+	color: '#000' // all platforms except Android and Windows default to black
+}
+
+'Window': {
+	backgroundColor: '#fff' // white background instead of default transparent or black
+}
+
+'TextField[platform=android]': {
+	height: Ti.UI.SIZE
+}
+
+*/
+
+".bckgrndGradient[platform=ios formFactor=handheld]" : {
+	backgroundGradient: {
+        type: 'linear',
+        startPoint: { x: '-100%', y: '50%' },
+        endPoint: { x: '100%', y: '100%' },
+        colors: [ { color: '1a8cd2', offset:0.01 }, { color: '67eaff', offset: 1.00 } ],
+    }	
+}
+
+".heading" : {
+ 	font: {
+		fontSize:"15"	
+		},
+	color:"black"
+}
+
+'TextField': {
+	bubbleParent:false
+}
+'TextArea': {
+	bubbleParent:false
+}
+
+".infoStamp" : {
+  font: {
+		fontSize:"12",
+	},
+	color:"black",
+	opacity:"0.75",
+	textAlign:"left",
+}
+
+".headingText" : {
+  font: {
+		fontSize:"27",
+	},
+	color:"black"
+}
+
+".lableText" : {
+  font: {
+		fontSize:"16",
+	},
+	color:"black"
+}
+
+".rateText":{
+	font: {
+		fontSize:"23",
+		fontWeight:"bold",	
+	},
+	color:"yellow",
+}
+ 
+".smallRate":{
+	font: {
+		fontSize:"15",
+		fontWeight:"regular",
+	},
+	color:"yellow",
+}
+
+
+".infoText" : {
+  font: {
+		fontSize:"16",
+	},
+	color:"black",
+	width:"70%",
+	height:"8%",
+	top:"1",
+	left:"18%",
+}
+
+".smallText" : {
+  font: {
+		fontSize:"13",
+	},
+	color:"545454",
+	textAlign:"center",
+	left:"10%" ,
+	right:"10%", 
+	top:"20",
+}
+
+".blueSmall" : {
+  font: {
+		fontSize:"13",
+	},
+	color:"509ad8"
+}
+
+".searchText" : {
+ 	font: {
+		fontSize:"18"	
+		},
+	padding: {
+		left:"40",
+		right:"80",
+	},
+	color:"#9d9d9d",
+}
+
+".title":{
+	font: {
+		fontSize:"20",	
+	},
+	color:"black",
+}
+
+".navBarHeading" : {
+  font: {
+		fontSize:"19",
+		fontWeight:"bold"
+	},
+	color:"black"
+}
+
+
+".leftRightTitle" : {
+  font: {
+		fontSize:"15",
+	},
+	color:"black"
+}
+
+"TableView":{
+	separatorStyle:"Titanium.UI.TABLE_VIEW_SEPARATOR_STYLE_NONE"
+}
+
+"TableViewRow":{
+	selectionStyle:"Titanium.UI.iOS.TableViewCellSelectionStyle.NONE"
+}
+

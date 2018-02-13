@@ -1,0 +1,18 @@
+<Alloy>
+	<View >
+		<View id="mainView" >
+			<ImageView  id="btnCancel" width="5%" left="15" top="40" image="images/cancel.png"></ImageView>
+			<View  id="videoLengthView" visible="false" top="25" height="22" width="55" backgroundColor="1f384b" opacity="0.6">
+				<Label id="videoLength" class="timerText" opacity="1">00.00</Label>
+			</View>
+			<ImageView width="8%" bottom="35" left="15%" id="btnFlash" image="images/automaticFlash.png"></ImageView>
+			<View  id="buttonView" zIndex="9999" width="110" height="110" borderRadius="55" borderWidth="5" borderColor="transparent" bottom="10">
+				<ImageView id="btnCircle" top="15" width="80" height="80"  image="images/captureButton.png"></ImageView>
+			</View>
+			<View id="box" width="110" zIndex="8888" height="110" borderRadius="55" opacity=".2" visible="false" backgroundColor="red" bottom="10">
+			</View>
+			<ImageView width="10%" bottom="35" right="15%" id="btnCameraType" image="images/camMain.png"></ImageView>	
+
+		</View>
+	</View>	
+</Alloy>

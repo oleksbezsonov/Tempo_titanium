@@ -1,0 +1,16 @@
+<Alloy>
+	<Window>
+		<View backgroundImage="images/eventPlaceHolder.png">
+			<Label class="feedText" right="50" top="21">Saturday night with DJ...</Label>
+			<Label class="dayTime" right="50" top="42">Jul 13, 2017 | 8.30pm</Label>
+			<ImageView width="6%" top="20" right="10" image="images/deleteButton.png"></ImageView>
+			
+			<View height="60" width="60" borderRadius="30" bottom="30" backgroundImage="/images/tempoRating.png">
+				<Label class="rateText">96</Label>
+			</View>
+			<ImageView width="8%" right="60" bottom="25" image="images/like.png"></ImageView>
+			<Label class="likeText" right="13" bottom="27">2.3k</Label>
+		</View>
+		
+	</Window>
+</Alloy>

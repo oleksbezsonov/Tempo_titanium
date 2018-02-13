@@ -1,0 +1,19 @@
+
+".container" : {
+  
+}
+
+".button":{
+	font: {
+		fontSize:"18",
+		fontWeight:"regular",
+	},
+	textAlign:"center",
+	width:"46%",
+	height:"40",
+	borderRadius:"15",
+	borderWidth:"1",
+	bottom:"10",
+	borderColor:"91bad3",
+	color:"white"
+}

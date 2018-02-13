@@ -1,0 +1,15 @@
+
+".navBarHeading" : {
+  font: {
+		fontSize:"19",
+	},
+	color:"black"
+}
+
+
+".leftRightTitle" : {
+  font: {
+		fontSize:"15",
+	},
+	color:"white"
+}

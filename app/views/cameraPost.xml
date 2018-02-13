@@ -1,0 +1,41 @@
+<Alloy>
+	<Window>
+		<View layout="vertical" backgroundColor="white">
+			<View width="99.9%" height="50" backgroundColor="white" top="20">
+				<View id="bckLbl" >
+					<ImageView left="10" image="images/back.png"></ImageView>
+					<Label class="headingText" left="30">Post to...</Label>
+				</View>
+				<Label id="postBtn" class="postText" right="10">Post!</Label>
+				<View height="1" bottom="0" width="90%" backgroundColor="aef3ff"></View>
+			</View>
+			<View id="searchBtn" backgroundColor="white" top="0" width="Ti.UI.FILL" height="50" bubbleParent="false" >
+				<TextField id="searchBr" class="searchText" left="10" right="80" hintText="Search" borderRadius="7" hintTextColor="#d7d7da" backgroundColor="efefef" width="Ti.UI.FILL" height="34"></TextField>
+				<Label class="cancelText" color="#157efb" right="20" top="12">Cancel</Label>
+				<ImageView height="15" width="15" left="25" image="/images/explore.png" />
+			</View>
+			
+			<View layout="vertical" scrollType="vertical" top="0" backgroundColor="white">
+				<View width="95%" height="40" top="0" left="0" backgroundColor="white">
+					<Label class="title" top="5" left="15">Events nearby</Label>
+					<View height="1" bottom="8" width="90%" backgroundColor="aef3ff"></View>
+				</View>
+				
+				<ScrollView id="myEventsScrollView" left="5" width="Ti.UI.SIZE" height="30%" backgroundColor="white" layout="horizontal" scrollType="horizontal">
+					
+				</ScrollView>
+					 
+				<TableView id="tableViewRecords" bubbleParent="true" separatorStyle="Titanium.UI.TABLE_VIEW_SEPARATOR_STYLE_NONE">
+					<HeaderView>
+						<View top="0" backgroundColor="white" height="80">
+		            		<Label class="allText" textAlign="center" left="23%">All</Label>
+		            		<ImageView height="Ti.UI.SIZE" width="15%" left="10" image="/images/sendAllIcon.png" />
+		            		<Button id="radioBtn" status="true" class="radioButton" right="7%"></Button>
+		            		<View height="1" bottom="0" left="5" width="Ti.UI.FILL" backgroundColor="aef3ff"></View>
+		            	</View>
+	            	</HeaderView>
+				</TableView> 
+			</View>
+		</View>
+	</Window>
+</Alloy>

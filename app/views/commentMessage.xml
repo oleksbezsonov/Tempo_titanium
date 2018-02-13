@@ -1,0 +1,22 @@
+<Alloy>
+	<View layout="vertical" left="5" width="120" height="Ti.UI.SIZE" backgroundColor="white" if="$.args.record.user_post_type =='image'">
+		<View touchEnabled="false" top="0" height="70%" width="Ti.UI.FILL" borderRadius="25">
+			<ImageView id="img" image="/images/eventPlaceHolder.png" borderRadius="25" width="Ti.UI.FILL" height="Ti.UI.FILL"></ImageView>
+		</View>
+		<View touchEnabled="false" top="0" height="Ti.UI.FILL" width="Ti.UI.FILL" backgroundColor="white">
+			<Label id="username" class="imageDesc" left="10" top="5">Adina Haggins</Label>
+			<Label id="postedOn" class="timeDesc" left="10" top="27">July 13, 2017 | 8.30pm</Label>
+		</View>
+	</View>
+
+	<View id="videoRecords" layout="vertical" left="5" width="120" height="Ti.UI.SIZE" backgroundColor="white" if="$.args.record.user_post_type =='video'">
+		<View touchEnabled="false" top="0" height="70%" width="Ti.UI.FILL" borderRadius="25">
+			<VideoPlayer mediaTypes="Titanium.Media.VIDEO_MEDIA_TYPE_VIDEO" id="videoPlayer" borderRadius="25" width="Ti.UI.FILL" height="Ti.UI.FILL" mediaControlStyle="Titanium.Media.VIDEO_CONTROL_NONE" autoplay="false"></VideoPlayer>
+		</View>
+		<View touchEnabled="false" top="0" height="Ti.UI.FILL" width="Ti.UI.FILL" backgroundColor="white">
+			<Label id="username" class="imageDesc" left="10" top="5">Adina Haggins</Label>
+			<Label id="postedOn" class="timeDesc" left="10" top="27">July 13, 2017 | 8.30pm</Label>
+		</View>
+	</View>	
+	
+</Alloy>

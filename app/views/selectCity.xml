@@ -1,0 +1,27 @@
+<Alloy>
+	<Window backgroundColor="white">
+		<View top="0" backgroundColor="33bdea" width="Ti.UI.FILL" height="65" id="navigBar">
+			<ImageView id="crossBtn" image="/images/clearButton.png" width="18" bottom="15" left="15"></ImageView>			
+			<Label id="centrTitle" class="navBarHeading" bottom="12" textAlign="center">Select Location</Label>
+	     </View>
+	     
+		<View height="Ti.UI.FILL" width="Ti.UI.FILL" layout="vertical" top="65" backgroundColor="white">
+			<View id="searchBtn" backgroundColor="white" top="0" width="Ti.UI.FILL" height="50" bubbleParent="false" >
+				<TextField id="searchTxt" class="searchText" left="10" right="80" hintText="Search" borderRadius="7" hintTextColor="#d7d7da" backgroundColor="efefef" width="Ti.UI.FILL" height="34"></TextField>
+				<Label color="#157efb" right="20" top="12">Cancel</Label>
+				<ImageView height="15" width="15" left="25" image="/images/explore.png" />
+			</View>
+			<View top="10" height="Ti.UI.SIZE" width="Ti.UI.FILL">
+				<View id="locDetect" height="45" width="90%" height="46" borderRadius="23" backgroundColor="e7f2f4" borderWidth="1" borderColor="9ec8dd">
+					<Label id="lblDetect" class="heading" textAlign="center" >Detect my location</Label>
+					<ImageView width="20" image="images/setVenueIcon.png" left="15"></ImageView>
+				</View>
+			</View> 
+			<Label class="small" top="10" left="5">EXPLORE THESE POPULAR AREAS</Label>
+			<TableView top="5" id="tableViewRecords">
+				
+			</TableView>
+		</View>
+		
+	</Window>
+</Alloy>

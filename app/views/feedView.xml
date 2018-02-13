@@ -1,0 +1,76 @@
+<Alloy>
+	<Window navBarHidden="true" backgroundColor="white">
+		<View top="0" backgroundColor="33bdea" width="Ti.UI.FILL" height="65" id="navigBar">
+			<ImageView id="addBtn" image="/images/addIcon.png" width="25" bottom="12" left="15" ></ImageView>			
+			<View id="selectCityLbl" top="30" width="40%" layout="horizontal" height="40%">
+				<Label width="Ti.UI.SIZE" id="centrTitle"  class="navBarHeading" textAlign="center" >City</Label>
+				<ImageView id="dropBtn" width="12" left="5" image="/images/dropDown.png"></ImageView>
+			</View> 
+			<ImageView id="searchBtn" width="25" bottom="12" right="70" image="/images/searchIcon.png"></ImageView>
+			<View id="notifyIcon" width="Ti.UI.SIZE" right="12">
+				<ImageView id="notify" width="30" height="30" bottom="10" image="/images/notifs.png"></ImageView>
+				<View id="redDot" backgroundColor="red" width="10" height="10" borderRadius="5" right="0" bottom="30"></View>
+			</View> 
+			  <SearchBar id="search" bubbleParent="false" visible="false" barColor="c5c5c9" showCancel="true" cancelButtonTitle="Cancel" height="43" bottom="0" backgroundColor="white" />
+		</View>
+	     
+		<View width="99%" height="95%" top="70" backgroundColor="white">
+			<ScrollView layout="vertical" scrollType="vertical" width="99.9%" backgroundColor="white">
+				<RefreshControl id="refreshCtrl"></RefreshControl>
+				<View width="Ti.UI.FILL" height="50" top="5" left="0" backgroundColor="white">
+					<Label class="title" top="5" left="10">My events</Label>
+					<Label categoryid="1" class="moreText" top="8" right="25" onClick="seeMoreFeeds">see more</Label>
+					<ImageView right="12" width="10" top="10" image="/images/seeMore.png"></ImageView>
+					<View height="2" bottom="8" width="90%" backgroundColor="aef3ff"></View>
+				</View>
+
+				<ScrollView id="myEventsScrollView" onClick="viewEvent" width="99%" height="40%" backgroundColor="white" layout="horizontal" scrollType="horizontal">
+					
+				</ScrollView> 
+				
+				<View width="Ti.UI.FILL" height="50" top="5" left="0" backgroundColor="white">
+					<Label id="trendingLbl" class="title" top="5" left="10">Trending in </Label>
+					<Label categoryid="2" class="moreText" top="8" right="25" onClick="seeMoreFeeds">see more</Label>
+					<ImageView right="12" width="10" top="10" image="/images/seeMore.png"></ImageView>
+					<View height="2" bottom="8" width="90%" backgroundColor="aef3ff"></View>
+				</View>
+				
+				<ScrollView id="myTrendingScrollView"  onClick="viewEvent" width="99%" height="40%" backgroundColor="white" layout="horizontal" scrollType="horizontal">
+					
+				</ScrollView> 
+				
+				
+				<View width="Ti.UI.FILL" height="50" top="5" left="0" backgroundColor="white">
+					<Label class="title" top="5" left="10">Upcoming Events</Label>
+					<Label categoryid="3" class="moreText" top="8" right="25" onClick="seeMoreFeeds">see more</Label>
+					<ImageView right="12" width="10" top="10" image="/images/seeMore.png"></ImageView>
+					<View height="2" bottom="8" width="90%" backgroundColor="aef3ff"></View>
+				</View>
+				
+				<ScrollView  id="myUpcomingScrollView"   onClick="viewEvent" width="99%" height="40%" backgroundColor="white" layout="horizontal" scrollType="horizontal">
+					
+				</ScrollView> 
+				
+				
+				<View width="Ti.UI.FILL" height="50" top="5" left="0" backgroundColor="white">
+					<Label class="title" top="5" left="10">Nearby Events</Label>
+					<Label categoryid="4" class="moreText" top="8" right="25" onClick="seeMoreFeeds">see more</Label>
+					<ImageView right="12" width="10" top="10" image="/images/seeMore.png"></ImageView>
+					<View height="2" bottom="8" width="90%" backgroundColor="aef3ff"></View>
+				</View>
+				
+				<ScrollView id="myNearbyScrollView"   onClick="viewEvent" width="99%" height="40%" backgroundColor="white" layout="horizontal" scrollType="horizontal">
+					
+				</ScrollView> 
+				
+				<View width="Ti.UI.FILL" height="50" top="5" left="0" backgroundColor="white">
+					<Label class="title" top="5" left="10">Views</Label>
+					<View height="2" bottom="8" width="90%" backgroundColor="aef3ff"></View>
+				</View>
+				<ScrollView id="familyAndFriends" onClick="viewFriendsPosts"  width="100%" bottom="40"  backgroundColor="white" height="Ti.UI.SIZE" layout="vertical" scrollType="vertical">
+					
+				</ScrollView> 
+			</ScrollView>
+		</View>
+	</Window>	
+</Alloy>

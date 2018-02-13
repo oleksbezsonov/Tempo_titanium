@@ -1,0 +1,22 @@
+<Alloy>
+	<Window fullscreen="true" backgroundColor="gray">
+			<ImageView zIndex="999" top="0" width="Ti.UI.FILL" height="90" image="images/eventGrdnt.png"></ImageView>
+			<View zIndex="9999" id="backBtn" onClick="closeMe" width="80" height="30" top="15" left="5">
+				<ImageView height="20"  left="2" image="images/backWhite.png"></ImageView>
+				<Label  class="feedText" left="15" >Feeds</Label>
+				
+			</View>
+			<Label zIndex="9999" id="eventTitleLbl" class="feedText" right="50" top="15"></Label>
+			<Label zIndex="9999" id= "eventDateLbl" class="dayTime" right="50" top="35"></Label> 
+			<ImageView bubbleParent="false" id="commentView" zIndex="9999"  width="8%" top="18" right="10" image="images/comments.png"></ImageView>
+
+		<!-- <ScrollableView backgroundColor="black" zIndex="99"  width="Ti.UI.SIZE" height="Ti.UI.SIZE" id="eventRecords" showPagingControl="true">
+			
+		</ScrollableView> -->
+		<View backgroundColor="black" zIndex="99"  width="Ti.UI.SIZE" height="Ti.UI.SIZE" id="eventRecords">
+			
+		</View>
+		<ImageView zIndex="9999" onClick="reportButton"  image="images/reportBtn.png" bottom="25" height="30" left="10" ></ImageView>
+		<Label zIndex="9999" id="postCounter"  class="feedText" left="65" bottom="25" ></Label>
+	</Window>
+</Alloy>

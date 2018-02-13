@@ -1,0 +1,23 @@
+<Alloy>
+	<Window navBarHidden="true">
+		<View top="0" backgroundColor="33bdea" width="Ti.UI.FILL" height="65" id="navigBar">
+			<View id="backView" width="80" left="5">
+				<ImageView image="/images/back.png" left="0" width="10" bottom="13"></ImageView>
+				<Label id="leftTitle" class="leftRightTitle" bottom="12" left="15">Back</Label>
+			</View>
+
+	     </View>
+		<View width="Ti.UI.FILL" height="Ti.UI.FILL" top="10%" backgroundColor="white" layout="vertical">
+			<TableView layout="vertical" id="tableViewRecords">
+				<HeaderView>
+					<View id="searchBtn" backgroundColor="white" top="5" width="Ti.UI.FILL" height="50" bubbleParent="false" >
+						<TextField id="search" class="searchText" left="10" right="80" hintText="Search" borderRadius="7" hintTextColor="#d7d7da" backgroundColor="efefef" width="Ti.UI.FILL" height="34"></TextField>
+						<Label id="cancelBtn"  color="#157efb" right="20" top="12">Cancel</Label>
+						<ImageView height="15" width="15" left="25" image="/images/explore.png" />
+					</View>
+				</HeaderView>
+				
+			</TableView>
+		</View>
+	</Window>
+</Alloy>

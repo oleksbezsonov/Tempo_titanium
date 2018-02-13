@@ -1,0 +1,17 @@
+
+".desc" : {
+ 	font: {
+		fontSize:"11"	
+		},
+	color:"50504e"
+}
+
+".venueHeading" : {
+ 	font: {
+		fontSize:"14"	
+		},
+	color:"50504e"
+}
+
+
+

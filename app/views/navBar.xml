@@ -1,0 +1,8 @@
+<Alloy>
+	<View width="Ti.UI.FILL" height="10%" top="0" backgroundColor="white">
+			<View left="0" id="backBtn" width="15%">
+				<ImageView left="20%" bottom="15%" image="/images/back.png"></ImageView>
+			</View>
+			<Label id="rightBtn" right="5%" visible="false" bottom="15%">Skip</Label>
+	</View>
+</Alloy>

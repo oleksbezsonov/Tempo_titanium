@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.5.0
+apiversion: 2
+architectures: armv7 arm64 i386 x86_64
+description: FlipImage
+author: efrancis
+license: Specify your license
+copyright: Copyright (c) 2017 by Your Company
+
+# these should not be edited
+name: FlipImage
+moduleid: Ti.Image.Flip
+guid: c15e1b32-0dde-4c22-8898-912b4aa7b967
+platform: iphone
+minsdk: 5.0.1.GA

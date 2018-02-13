@@ -1,0 +1,36 @@
+<Alloy>
+	<Window navBarHidden="true" backgroundColor="white">
+		<View top="0" backgroundColor="33bdea" width="Ti.UI.FILL" height="65" id="navigBar">
+			<View id="back" width="15%" left="0">
+				<ImageView id="backBtn" image="/images/back.png" width="12" bottom="15" left="15" ></ImageView>
+			</View>
+			<Label id="centrTitle" class="navBarHeading"  bottom="12" textAlign="center">Inbox</Label>	
+			<!--<ImageView id="searchBtn" width="25" bottom="12" right="12" image="/images/searchIcon.png"></ImageView> -->
+			<ImageView  bubbleParent="false" id="deleteItem" zIndex="999"  width="8%" bottom="10" right="10" image="images/deleteButton.png"></ImageView>
+			
+			<!--<SearchBar id="search" bubbleParent="false" visible="false" barColor="c5c5c9" showCancel="true" cancelButtonTitle="Cancel" height="43" bottom="0" backgroundColor="white" /> -->
+	     </View>
+		
+		<View id="msgView" width="99.9%" height="99.9%" top="66" backgroundColor="white" layout="vertical">
+			<View width="95%" height="40" top="0" left="0" backgroundColor="white">
+				<Label class="title" top="7" left="12">Notifications</Label>
+				<View height="2" bottom="5" width="90%" backgroundColor="aef3ff"></View>
+			</View>
+			
+			<TableView id="notificationsRecords" top="10" backgroundColor="white" height="40%">
+				<RefreshControl id="refreshCtrl"></RefreshControl>
+			</TableView>
+			
+			<View width="95%" height="40" top="10" left="0" backgroundColor="white" onClick="toggleView" >
+				<Label id="messageTitle" class="title" top="7" left="12">Messages</Label>
+				<Label status="true" id="hideMessage" class="timeDesc" right="12" textAlign="center" height="35" width="50">Hide</Label>
+				<View height="2" bottom="5" width="90%" backgroundColor="aef3ff"></View>
+			</View>
+			
+			<ScrollView id="messagesView" onClick="viewFriendsPosts"  width="Ti.UI.SIZE" height="33%" top="2" backgroundColor="white" left="2" bottom="2" layout="horizontal" scrollType="horizontal">
+					
+				</ScrollView> 
+	
+		</View>
+	</Window>
+</Alloy>

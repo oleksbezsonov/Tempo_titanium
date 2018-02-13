@@ -1,0 +1,12 @@
+<Alloy>
+	<Window>
+		<BlurView height="Ti.UI.FILL" width="Ti.UI.FILL" backgroundImage="/images/chatImage.png" id="imgBlur">
+			<ImageView width="4%" top="23" left="10" image="/images/backWhite.png"></ImageView>
+			<Label top="27" color="white" left="33">Messages</Label>
+			<Label class="seenText" right="20" top="25">Joey Renolds</Label>
+			<Label class="otherText" right="20" top="47">July 13, 2017 | 8.30pm</Label>
+			<TextField backgroundColor="white" height="40" left="15" width="80%" borderRadius="20" bottom="10"></TextField>
+			<ImageView image="images/sendButton.png" bottom="12" width="10%" right="12"></ImageView>
+		</BlurView>
+	</Window>
+</Alloy>

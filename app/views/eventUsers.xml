@@ -1,0 +1,31 @@
+<Alloy>
+	<Window>
+		<View layout="vertical" backgroundColor="white">
+			<View top="0" backgroundColor="33bdea" width="Ti.UI.FILL" height="65" id="navigBar">
+				<View id="back" width="Ti.UI.SIZE" left="0">
+				<ImageView id="backBtn" image="/images/back.png" width="10" bottom="15" left="14" ></ImageView>
+				<Label id="leftTitle" class="leftRightTitle" bottom="15" left="29">Back</Label>
+			</View>
+				
+				<Label id="centrTitle" class="navBarHeading" bottom="12" textAlign="center"></Label>
+				<Label id="rightTitle" class="leftRightTitle" right="17" bottom="15">Send</Label>
+		     </View>
+			<!-- <View id="searchBtn" backgroundColor="white" top="0" width="Ti.UI.FILL" height="50" bubbleParent="false" >
+				<TextField id="searchBr" class="searchText" left="10" right="80" hintText="Search" borderRadius="7" hintTextColor="#d7d7da" backgroundColor="efefef" width="Ti.UI.FILL" height="34"></TextField>
+				<Label class="cancelText" color="#157efb" right="20" top="12">Cancel</Label>
+				<ImageView height="15" width="15" left="25" image="/images/explore.png" />
+			</View>
+			 -->
+			<TableView id="tableViewRecords" bubbleParent="true" backgroundColor="white" top="0" separatorStyle="Titanium.UI.TABLE_VIEW_SEPARATOR_STYLE_NONE">
+				<HeaderView id="headerAll">
+						<View top="0" backgroundColor="white" height="80">
+		            		<Label class="allText" textAlign="center" left="23%">All</Label>
+		            		<ImageView height="Ti.UI.SIZE" width="15%" left="10" image="/images/sendAllIcon.png" />
+		            		<Button id="radioBtn" status="true" class="radioButton" right="7%"></Button>
+		            		<View height="1" bottom="0" left="5" width="Ti.UI.FILL" backgroundColor="aef3ff"></View>
+		            	</View>
+	            	</HeaderView>
+			</TableView>
+			</View>
+	</Window>
+</Alloy>

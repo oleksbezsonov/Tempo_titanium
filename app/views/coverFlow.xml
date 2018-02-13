@@ -1,0 +1,21 @@
+<Alloy>
+    <Window id="window">
+        <CoverFlowView id="view" platform="ios" backgroundColor="#000">
+
+            <!-- The Images tag sets the CoverFlowView.images property. -->
+            <Images>
+
+                <!-- Assign the image by node text or the image attribute. -->
+                <!-- Can also specify the width and height attributes. -->
+
+                <Image>images/userPic1.png</Image>
+                <Image>images/userPic2.png</Image>
+                <Image>images/userPic3.png</Image>
+
+            </Images>
+
+            <!-- Place additional views for the CoverFlowView here. -->
+
+        </CoverFlowView>
+    </Window>
+</Alloy>

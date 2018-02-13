@@ -1,0 +1,18 @@
+<Alloy>
+	 <TabGroup id="tabGroup" pullBackgroundColor="white" viewShadowColor="white" activeTabIconTint="#28bdea" >
+        <Tab id="captureTab" title="Camera" icon="/images/tabCamera@2x.png" onSelected="tabSelected">
+           <Window id="captureWin" class="bckgrndGradient" navBarHidden="true" ></Window>
+        </Tab>
+        <Tab id="feedsTab" tintColor="white" title="Feed" icon="/images/tabFeeds@2x.png" onSelected="tabSelected">
+            <Require id="feedView" src="feedView"></Require>
+        </Tab>
+        <Tab id="eventsTab" tintColor="white" title="Manage Events" icon="/images/tabEvents@2x.png" onSelected="tabSelected">
+            <Require id="manageEvents" src="manageEvents"></Require>
+        </Tab>
+        <Tab id="profileTab" tintColor="white" title="Profile" icon="/images/tabProfile@2x.png" onSelected="tabSelected">
+           <Require id="profileView" src="profileView"></Require>
+        </Tab>
+        <!-- Use the Require tag to include external Ti.UI.Tab views -->
+   </TabGroup> 
+    
+</Alloy>

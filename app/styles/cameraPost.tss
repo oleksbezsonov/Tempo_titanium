@@ -1,0 +1,39 @@
+
+".postText":{
+	font: {
+		fontSize:"20",	
+	},
+	color:"black",
+}
+
+".imgDesc":{
+	font: {
+		fontSize:"14",	
+	},
+	color:"black",
+}
+
+".userName" : {
+ 	font: {
+		fontSize:"21"	
+		},
+	color:"black",
+}
+
+".allText" : {
+ 	font: {
+		fontSize:"21",
+		fontWeight:"bold",
+		},
+	color:"black",
+}
+
+".radioButton":{
+	title: '',
+    width: 40,
+    height: 40,
+    borderColor: '#328bd1',
+    borderWidth: 2,
+    borderRadius:"20",
+    backgroundImage: 'none'
+}

@@ -1,0 +1,53 @@
+<Alloy>
+	<Window navBarHidden="true" backgroundColor="white">
+		
+		<View top="0" backgroundColor="33bdea" width="Ti.UI.FILL" height="65" id="navigBar">
+			<View id="back" width="Ti.UI.SIZE" left="0">
+				<ImageView id="backBtn" image="/images/backWhite.png" width="12" bottom="13" left="12" ></ImageView>
+				<Label id="leftTitle" class="leftRightTitle" bottom="15" left="28">messages</Label>
+			</View>	
+			<Label id="centrTitle" class="navBarHeading" bottom="12" textAlign="center">Event Info</Label>
+			<ImageView id="deleteBtn" bottom="13" width="17" right="20"  image="/images/deleteButton.png"></ImageView>
+			<ImageView id="settingBtn" bottom="12" width="22" right="55" image="/images/setting.png"></ImageView>
+	     </View>
+		
+		<View layout="vertical" backgroundColor="white" width="Ti.UI.FILL" top="65" height="Ti.UI.FILL">
+			<View layout="vertial" width="Ti.UI.FILL" height="30%">
+				<ImageView width="Ti.UI.FILL" height="Ti.UI.FILL" image="images/eventPlaceHolder.png">
+					<View bottom="0" height="40%" backgroundImage="images/eventGrdnt.png">
+						<Label class="imageDesc" color="white" bottom="18" left="15">Peter's Birthday Party</Label>
+						<Label class="timeDesc" color="white" bottom="2" left="15">July 13, 2017 | 6.30pm onwards</Label>
+				   </View> 
+				</ImageView>
+			</View>
+			
+			<View top="12%" layout="vertical" backgroundColor="white" height="15%">
+				<Label class="imageDesc" left="20" top="5" color="black">Description</Label>
+				<View height="1" top="1" left="20" backgroundColor="86eeff" width="85%"></View>
+				<Label class="timeDesc" left="20" top="5" color="black">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </Label>
+			</View>
+			
+			<View backgroundColor="white" layout="vertical" height="7%" top="0">
+				<Label class="imageDesc" left="20" top="5" color="black">Hosts</Label>
+				<View height="1" top="1" left="20" backgroundColor="86eeff" width="85%"></View>
+			</View>
+			
+			<TableView height="17%" top="0" backgroundColor="white">
+				<TableViewSection>
+					<TableViewRow top="5" backgroundColor="white" height="45">
+	            		<Label class="hostName" top="8" left="18%">Agina Haggins</Label>
+	            		<Label class="hostText" top="22" left="18%">host</Label>
+	            		<ImageView height="Ti.UI.SIZE" width="13%" top="0" left="10" image="/images/avatar.png" />
+	            	</TableViewRow>
+					 <TableViewRow top="5" backgroundColor="white" height="45">
+	            		<Label class="hostName" top="8" left="18%">Justina Hemminger</Label>
+	            		<Label class="hostText" top="22" left="18%">co-host</Label>
+	            		<ImageView height="Ti.UI.SIZE" width="13%" top="0" left="10" image="/images/avatar.png" />
+	            	</TableViewRow>
+				</TableViewSection>
+			</TableView>
+			
+		<Label height="40" width="70%" top="0" borderRadius="20" backgroundColor="2dc1ee" textAlign="center">Accept invite!</Label>
+		</View>
+	</Window>
+</Alloy>

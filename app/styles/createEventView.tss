@@ -1,0 +1,49 @@
+
+".eventTitle" : {
+ 	font: {
+		fontSize:"17"	
+		},
+	color:"848484"
+}
+
+".eventFields" : {
+ 	font: {
+		fontSize:"17"	
+		},
+	color:"black"
+}
+
+".info" : {
+ 	font: {
+		fontSize:"14"	
+		},
+	color:"black"
+}
+
+".time" : {
+ 	font: {
+		fontSize:"14"	
+		},
+	color:"848484"
+}
+".smallText" : {
+ 	font: {
+		fontSize:"14"	
+		},
+	color:"848484"
+}
+".btnText":{
+	font: {
+		fontSize:"18",
+		fontWeight:"regular",
+	},
+	textAlign:"center",
+	width:"190",
+	height:"0",
+	borderRadius:"15",
+	backgroundColor:"#FC7C61",
+	borderWidth:"1",
+	bottom:"10",
+	borderColor:"91bad3",
+	color:"white"
+}

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <id>com.tempoalive.tempo</id>
+    <!-- <id>com.carl.tempo</id> -->
+    <name>Tempo</name>
+    <version>2.0.69</version>
+    <publisher>emmanuelfrancis</publisher>
+    <url>undefined</url>
+    <description>undefined</description>
+    <copyright>2017 by emmanuelfrancis</copyright>
+    <icon>DefaultIcon-ios.png</icon>
+    <fullscreen>false</fullscreen>
+    <navbar-hidden>false</navbar-hidden>
+    <analytics>true</analytics>
+    <guid>8ab0e26c-0dd2-4879-9ccc-12ea7974a1c2</guid>
+    <property name="ti.ui.defaultunit" type="string">dp</property>
+    <property name="run-on-main-thread" type="bool">true</property>
+    <ios>
+        <enable-launch-screen-storyboard>false</enable-launch-screen-storyboard>
+        <use-app-thinning>true</use-app-thinning>
+        <log-server-port>1099</log-server-port>
+        <plist>
+            <dict>
+                <key>UISupportedInterfaceOrientations~iphone</key>
+                <array>
+                    <string>UIInterfaceOrientationPortrait</string>
+                </array>
+                <key>UISupportedInterfaceOrientations~ipad</key>
+                <array>
+                    <string>UIInterfaceOrientationPortrait</string>
+                    <string>UIInterfaceOrientationPortraitUpsideDown</string>
+                    <string>UIInterfaceOrientationLandscapeLeft</string>
+                    <string>UIInterfaceOrientationLandscapeRight</string>
+                </array>
+                <key>UIRequiresPersistentWiFi</key>
+                <false/>
+                <key>UIPrerenderedIcon</key>
+                <false/>
+                <key>UIStatusBarHidden</key>
+                <false/>
+                <key>UIStatusBarStyle</key>
+                <string>UIStatusBarStyleDefault</string>
+                <key>NSCameraUsageDescription</key>
+                <string>Tempo needs access to your camera, so you can capture photos and videos to post them to events feed.</string>
+                <key>NSPhotoLibraryUsageDescription</key>
+                <string>Tempo needs access to your photo library, so you can use images from your library as a profile picture and/or an event image.</string>
+                <key>NSMicrophoneUsageDescription</key>
+                <string>Tempo needs access to your microphone, so you can use the microphone to record your voice in posts.</string>
+                <key>NSLocationUsageDescription</key>
+                <string>Tempo needs to collect your geolocation to to send suggestions of Nearby events to attend.</string>
+                <key>NSLocationWhenInUseUsageDescription</key>
+                <string>Tempo needs to collect your geolocation to send suggestions of Nearby events to attend.</string>
+                <key>NSAppleMusicUsageDescription</key>
+                <string>Tempo needs access to your music library to include music in your posts.</string>
+                <key>NSPhotoLibraryAddUsageDescription</key>
+                <string>Tempo needs access to your photo library, so you can use images from your library as a profile picture and/or an event image.</string>
+                <key>UIBackgroundModes</key>
+                <array>
+                    <string>fetch</string>
+                </array>
+            </dict>
+        </plist>
+    </ios>
+    <android xmlns:android="http://schemas.android.com/apk/res/android"/>
+    <mobileweb>
+        <precache/>
+        <splash>
+            <enabled>true</enabled>
+            <inline-css-images>true</inline-css-images>
+        </splash>
+        <theme>default</theme>
+    </mobileweb>
+    <modules>
+        <module platform="iphone">ti.ios.trim</module>
+        <module platform="iphone">ti.map</module>
+        <module platform="android">ti.map</module>
+        <module platform="iphone">com.williamrijksen.onesignal</module>
+        <module platform="iphone">Ti.Image.Flip</module>
+        <module platform="iphone">com.appcelerator.urlSession</module>
+        <module platform="iphone">ti.cameraview</module>
+        <module platform="iphone">ti.safaridialog</module>
+    </modules>
+    <deployment-targets>
+        <target device="android">false</target>
+        <target device="ipad">false</target>
+        <target device="iphone">true</target>
+        <target device="mobileweb">false</target>
+    </deployment-targets>
+    <sdk-version>6.3.0.GA</sdk-version>
+    <plugins>
+        <plugin version="1.0">ti.alloy</plugin>
+    </plugins>
+    <property name="appc-app-id" type="string">59b6669d600cff25ce9ced87</property>
+    <property name="OneSignal_AppID" type="string">cf5ddcd1-db11-46cf-96bd-500c1fac8b3b</property>
+</ti:app>

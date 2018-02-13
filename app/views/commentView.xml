@@ -1,0 +1,27 @@
+<Alloy>
+	<Window fullscreen="true">
+		<BlurView height="Ti.UI.FILL" width="Ti.UI.FILL" backgroundImage="" id="imgBlur"></BlurView>
+		
+		<View id="backCmt" height="30" top="15" left="0" width="80" layout="horizontal">
+			<ImageView height="20" left="10" image="/images/backWhite.png"></ImageView>
+			<Label color="white" left="5">Back</Label>
+		</View>
+		
+		<View layout="vertical" top="27" width="60%" height="60" right="20">
+		<Label id="usersList" class="seenText" right="0" width="95%" height="20"  top="1"> </Label>
+		<Label id="otherText" class="otherText" right="5" top="5"></Label>
+		</View>
+		
+		<TableView backgroundColor="transparent" bubbleParent="true" top="70" id="tableViewRecords" height="81%" separatorStyle="Titanium.UI.TABLE_VIEW_SEPARATOR_STYLE_NONE">
+		
+		</TableView>		
+			
+		<View bottom="0" id="sendBox" height="Ti.UI.SIZE">
+			<TextArea class="chatBox" height="Ti.UI.SIZE" suppressReturn="true" bubbleParent="false"  textAlign="left" id="textChat" ></TextArea>
+			<View onClick="submitMessage" id="sendBtn" height="38" width="38" right="12" bottom="12">
+				<ImageView image="images/sendButton.png" ></ImageView>
+			</View>
+		</View>
+		
+	</Window>
+</Alloy> 

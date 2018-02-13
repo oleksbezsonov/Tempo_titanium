@@ -1,0 +1,77 @@
+<Alloy>
+	<Window navBarHidden="true" backgroundColor="white">
+		
+		<View top="0" backgroundColor="33bdea" width="Ti.UI.FILL" height="65" id="navigBar">
+			<View id="back" width="Ti.UI.SIZE" left="0">
+				<ImageView id="backBtn" image="/images/back.png" width="10" bottom="15" left="14" ></ImageView>
+				<Label id="leftTitle" class="leftRightTitle" bottom="15" left="29">Back</Label>
+			</View>
+			<Label id="centrTitle" class="navBarHeading" bottom="12" left="37%" >Settings</Label>
+			<Label id="rightTitle" class="leftRightTitle" visible="false" right="17" bottom="15"></Label>
+	     </View>
+		
+		<TableView id="tableViewRecords" width="Ti.UI.FILL" height="Ti.UI.FILL" top="65" backgroundColor="white">
+			<TableViewSection>
+				<TableViewRow height="40" backgroundColor="white">
+					<Label class="heading" left="10">ACCOUNT SETTINGS</Label>		
+				</TableViewRow>
+				
+				
+				<TableViewRow height="55" backgroundColor="white">
+					<Label id="editBtn" class="otherText" left="25">Edit profile</Label>
+					<ImageView width="10" right="20" image="images/forwardArrow.png"></ImageView>
+					<View backgroundColor="ccf7ff" height="1" width="Ti.UI.FILL" bottom="0"></View>
+				</TableViewRow>
+				
+				<TableViewRow height="55" backgroundColor="white">
+					<Label class="otherText" left="25">Receive push notifications</Label>
+					<Switch id="switchNotify" tintColor="1c9a24" right="20" value="true"></Switch>
+					<View backgroundColor="ccf7ff" height="1" width="Ti.UI.FILL" bottom="0"></View>
+				</TableViewRow>
+				
+				<TableViewRow height="40" backgroundColor="white">
+					<Label class="heading" left="10">ABOUT</Label>		
+				</TableViewRow>
+				
+				<TableViewRow height="55" backgroundColor="white">
+					<Label class="otherText" left="25">Terms of service</Label>
+					<ImageView width="10" right="20" image="images/forwardArrow.png"></ImageView>
+					<View backgroundColor="ccf7ff" height="1" width="Ti.UI.FILL" bottom="0"></View>
+				</TableViewRow>
+				
+				<TableViewRow height="55" backgroundColor="white">
+					<Label class="otherText" left="25">Privacy policy</Label>
+					<ImageView width="10" right="20" image="images/forwardArrow.png"></ImageView>
+					<View backgroundColor="ccf7ff" height="1" width="Ti.UI.FILL" bottom="0"></View>
+				</TableViewRow>
+				
+				
+				<TableViewRow height="40" backgroundColor="white">
+					<Label class="heading" left="10">OTHER</Label>		
+				</TableViewRow>
+				
+				<TableViewRow height="55" backgroundColor="white">
+					<Label class="otherText" left="25">Like us on Facebook</Label>
+					<ImageView width="10" right="20" image="images/forwardArrow.png"></ImageView>
+					<View backgroundColor="ccf7ff" height="1" width="Ti.UI.FILL" bottom="0"></View>
+				</TableViewRow>
+				
+				<TableViewRow height="55" backgroundColor="white">
+					<Label class="otherText" left="25">Follow us on Twitter</Label>
+					<ImageView width="10" right="20" image="images/forwardArrow.png"></ImageView>
+					<View backgroundColor="ccf7ff" height="1" width="Ti.UI.FILL" bottom="0"></View>
+				</TableViewRow>
+				<TableViewRow height="55" backgroundColor="white">
+					<Label class="otherText" left="25">Follow us on Instagram</Label>
+					<ImageView width="10" right="20" image="images/forwardArrow.png"></ImageView>
+					<View backgroundColor="ccf7ff" height="1" width="Ti.UI.FILL" bottom="0"></View>
+				</TableViewRow>
+				
+				<TableViewRow top="15"  layout="horizontal" width="Ti.UI.FILL" height="Ti.UI.SIZE" id="logoutRow">
+					<Label id="logoutBtn" left="25%" class="btnText" height="40" >Logout</Label>
+				</TableViewRow>				
+				
+			</TableViewSection>
+		</TableView>
+	</Window>
+</Alloy>

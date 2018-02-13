@@ -1,0 +1,30 @@
+
+
+".title":{
+	font: {
+		fontSize:"20",	
+	},
+	color:"black",
+}
+
+".moreText":{
+	font: {
+		fontSize:"15",	
+	},
+	color:"black",
+}
+
+".imageDesc":{
+	font: {
+		fontSize:"14",	
+	},
+	color:"black",
+}
+
+".timeDesc":{
+	font: {
+		fontSize:"10",	
+	},
+	color:"black",
+}
+

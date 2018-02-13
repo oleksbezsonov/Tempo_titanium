@@ -1,0 +1,18 @@
+<Alloy>
+	<TableViewRow className="chatTextRow" top="5" selectionStyle="Titanium.UI.iOS.TableViewCellSelectionStyle.NONE">
+		
+		<View height="Ti.UI.SIZE" left="40" right="5" top="10">
+			<View zIndex="999" bottom="25" right="10" layout="vertical" backgroundColor="white" width="Ti.UI.SIZE" height="Ti.UI.SIZE"  borderRadius="10">
+				<View height="25" top="3" width="Ti.UI.SIZE" right="10">
+					<Label text="You" color="black" opacity="0.5" id="userName" width="Ti.UI.SIZE" class="leftRightTitle" top="2" left="5"></Label>
+				</View>
+				<Label id="chatText" text="" textAlign="left" color="black" width="Ti.UI.SIZE" top="0" left="10" right="10"></Label>
+				<View height="20" width="Ti.UI.SIZE" right="5" left="10">
+					<Label text="Sent Jan 7" id="chatTimestamp" width="Ti.UI.SIZE" textAlign="left" class="infoStamp" bottom="2" right="5"></Label>
+				</View>
+			</View>
+			<!-- <View zIndex="99" bottom="25" right="10" height="10" width="10" backgroundColor="white"></View> -->  	
+		</View>
+			
+	</TableViewRow>
+</Alloy>

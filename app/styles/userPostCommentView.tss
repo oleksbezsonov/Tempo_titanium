@@ -1,0 +1,37 @@
+
+
+".seenText" : {
+  font: {
+		fontSize:"16",
+		fontWeight:'bold'
+	},
+	color:"white",
+	textAlign:"right",
+}
+
+".otherText" : {
+  font: {
+		fontSize:"14",
+	},
+	color:"white",
+	textAlign:"right",
+}
+
+".chatBox":{
+	font:{
+		fontSize:"15",
+		fontWeight:'regular'
+	},
+	borderRadius:"20",
+	backgroundColor:"white",
+	left:"15",
+	width:"80%",
+	top:"5",
+	bottom:"12",
+	padding: {
+		left:"15",
+		right:"15",
+		top:"10",
+		bottom:"10",
+	},
+}

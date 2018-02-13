@@ -1,0 +1,25 @@
+<Alloy>
+	<Window>
+		<Require id="navigation" src="navBar"></Require>
+		<View width="Ti.UI.FILL" height="Ti.UI.FILL" top="10%" backgroundColor="white" layout="vertical">
+				<Label class="headingText" top="10" textAlign="center">Let's get started</Label>
+				<Label class="blueSmall" top="3">Here's a list of people we found you may like to follow.</Label>
+				<ImageView top="3" width="90%" image="/images/headerDivide.png"></ImageView>
+				
+			<TableView layout="vertical" height="75%" id="tableViewRecords">
+				<HeaderView>
+					<View id="searchBtn" backgroundColor="white" top="5" width="Ti.UI.FILL" height="50" bubbleParent="false" >
+							<TextField id="searchTxt" class="searchText" left="10" right="80" hintText="Search" borderRadius="7" hintTextColor="#d7d7da" backgroundColor="efefef" width="Ti.UI.FILL" height="34"></TextField>
+							<Label class="cancelText" color="#157efb" right="20" top="12">Cancel</Label>
+							<ImageView height="15" width="15" left="25" image="/images/explore.png" />
+						</View>
+					
+				</HeaderView>>
+				
+            	
+			</TableView>
+			
+			<Label id="continueBtn" height="45" width="80%" top="15" borderRadius="22.5" backgroundColor="2dc1ee" textAlign="center">Complete</Label>
+		</View>
+	</Window>
+</Alloy>  

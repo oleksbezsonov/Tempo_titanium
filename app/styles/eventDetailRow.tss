@@ -1,0 +1,25 @@
+
+
+".feedText" : {
+ 	font: {
+		fontSize:"17"	
+		},
+	color:"white"
+}
+
+
+".dayTime" : {
+ 	font: {
+		fontSize:"13"	
+		},
+	color:"white"
+}
+
+
+
+".likeText":{
+	font: {
+		fontSize:"20",
+	},
+	color:"white",
+}

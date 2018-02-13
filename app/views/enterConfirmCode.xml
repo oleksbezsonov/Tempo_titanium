@@ -1,0 +1,20 @@
+<Alloy>
+	<Window>
+		<Require id="navigation" src="navBar"></Require>
+		<View width="Ti.UI.FILL" height="Ti.UI.FILL" top="10%" backgroundColor="white" layout="vertical">
+			<Label class="headingText" top="10" textAlign="center">Enter Confirmation Code</Label>
+			<Label class="blueSmall" id="lblText" textAlign="center" top="3">Enter the code we sent to +1 (823) 620-9436 via SMS</Label>
+			<ImageView top="3" width="90%" image="/images/headerDivide.png"></ImageView>
+			<Label class="lableText" top="15%" left="15%">Code</Label>
+			<View height="55" width="Ti.UI.FILL" top="10" layout="horizontal">
+				<TextField id="txt1" idx="0" onChange="moveFocus" onFocus="clearField" class="confirmCode" maxLength="1"  left="15%" top="20%" height="40" width="10%"></TextField>
+				<TextField id="txt2" idx="1" onChange="moveFocus" onFocus="clearField" class="confirmCode" maxLength="1"   left="3%" top="20%" height="40" width="10%"></TextField>
+				<TextField id="txt3" idx="2" onChange="moveFocus" onFocus="clearField" class="confirmCode" maxLength="1"  left="3%" top="20%" height="40" width="10%"></TextField>
+				<TextField id="txt4" idx="3" onChange="moveFocus" onFocus="clearField" class="confirmCode" maxLength="1"  left="3%" top="20%" height="40" width="10%"></TextField>
+				<TextField id="txt5" idx="4" onChange="moveFocus" onFocus="clearField" class="confirmCode" maxLength="1"  left="3%" top="20%" height="40" width="10%"></TextField>
+				<TextField id="txt6" idx="5" onChange="moveFocus" onFocus="clearField" class="confirmCode" maxLength="1"  left="3%" top="20%" height="40" width="10%"></TextField>
+			</View>
+			<Label id="confirmCode" height="45" width="70%" top="15%" borderRadius="22.5" backgroundColor="2dc1ee" textAlign="center">Send Again 52</Label>
+		</View>
+	</Window>
+</Alloy>

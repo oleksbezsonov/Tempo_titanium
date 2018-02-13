@@ -1,0 +1,38 @@
+<Alloy>
+	<Window backgroundColor="gray">
+			<View zIndex="999" id="backBtn" onClick="closeMe" width="80" height="30" top="24" left="5">
+				<ImageView height="20"  left="2" image="images/backWhite.png"></ImageView>
+				<Label  class="feedText" left="15" >Profile</Label>
+			</View>
+			<Label zIndex="999" id= "dateLbl" class="dayTime" left="80" top="30"></Label> 
+			<ImageView if="$.args.otherUser!=true" bubbleParent="false" id="deleteItem" zIndex="999"  width="8%" top="23" right="10" image="images/deleteButtonWhite.png"></ImageView>
+			<ImageView if="$.args.otherUser!=true" bubbleParent="false" id="commentView" zIndex="999"  width="8%" top="26" right="50" image="images/comments.png"></ImageView>
+
+		<!-- <ScrollableView backgroundColor="black" zIndex="99"  width="Ti.UI.SIZE" height="Ti.UI.SIZE" id="eventRecords" showPagingControl="true">
+			
+		</ScrollableView> -->
+		<View backgroundColor="black" zIndex="99"  width="Ti.UI.SIZE" height="Ti.UI.SIZE" id="eventRecords">
+			<View if="$.args.record.post_type=='image' || $.args.record.user_post_type=='image'" height="Ti.UI.FILL" width="Ti.UI.FILL" top="0" backgroundColor="black">
+				<ImageView id="eventImg" top="0" width="Ti.UI.FILL" height="Ti.UI.FILL" >
+					<View visible="false" height="60" width="60" borderRadius="30" bottom="30" backgroundImage="/images/tempoRating.png">
+						<Label id="rating" class="rateText">96</Label>
+					</View>
+					<ImageView if="$.args.record.like_count" id="likeBtn" bubbleParent="false"  width="8%" right="60" bottom="25" image="images/like.png" ></ImageView>
+					<Label id="likeCount" class="likeText" right="20" bottom="30"></Label>
+				</ImageView>
+			</View>
+			 
+			<View id="videoRecords" backgroundColor="gray" height="Ti.UI.FILL" width="Ti.UI.FILL" top="0" if="$.args.record.post_type =='video' || $.args.record.user_post_type =='video'">
+				<VideoPlayer mediaTypes="Titanium.Media.VIDEO_MEDIA_TYPE_VIDEO" id="videoPlayer" width="Ti.UI.FILL" ns="Ti.Media" height="Ti.UI.FILL" mediaControlStyle="Titanium.Media.VIDEO_CONTROL_NONE" autoplay="true">
+		        
+			         <View height="60" width="60" borderRadius="30" bottom="30" backgroundImage="/images/tempoRating.png">
+						<Label id="rating"  class="rateText">96</Label>
+					</View>
+					<ImageView  if="$.args.record.like_count" bubbleParent="false" id="likeBtn" width="8%" right="60" bottom="25" image="images/like.png" ></ImageView>
+					<Label id="likeCount" class="likeText" right="13" bottom="27"></Label>
+				</VideoPlayer> 
+			</View>
+		</View>		
+		<ActivityIndicator zIndex="99999" style="Ti.UI.ActivityIndicatorStyle.DARK" id="activityIndicator"/>
+	</Window>
+</Alloy>

@@ -1,0 +1,110 @@
+<h1>ti.ios.trim Module</h1>
+<h2>Description</h2>
+<p>This module extends the Appcelerator Titanium Mobile framework and allows trimming and compressing videos on iOS. This is currently not possible using Titanium's VideoPlayer:</p>
+<p><a href="https://jira.appcelerator.org/browse/TIMOB-1816">[#TIMOB-1816] iOS: Phone &gt; Record Video, edit/trimming is not shown in playback - Appcelerator JIRA</a>
+<a href="https://jira.appcelerator.org/browse/TIMOB-4200">[#TIMOB-4200] iOS - Edit mode on record video returns entire video - Appcelerator JIRA</a></p>
+<h3>Getting the module</h3>
+<p>Find the newest version in the dist folder.</p>
+<h3>Referencing the module</h3>
+<p>Simply add the following lines to your <code>tiapp.xml</code> file:</p>
+<pre><code>&lt;modules&gt;
+    &lt;module platform="iphone" version="0.2"&gt;ti.ios.trim&lt;/module&gt;
+&lt;/modules&gt;
+</code></pre>
+<h3>Accessing the module</h3>
+<p>To access this module from JavaScript, you would do the following:</p>
+<pre><code>var trimmer = require('ti.ios.trim');
+</code></pre>
+<p>The trimmer variable is a reference to the Module object.
+a</p>
+<h2>Reference</h2>
+<h3>trimVideo({Object} options)</h3>
+<p><code>options</code> can have the following keys:</p>
+<ul>
+<li><code>input</code><ul>
+<li>the path to video file to be trimmed</li>
+<li>this has to be either an absolute file path (via file.resolve()) or a path to an object inside the asset library (e.g. using the <a href="https://github.com/omorandi/TiAssetsLibrary">TiAssetsLibrary Module</a>)</li>
+</ul>
+</li>
+<li><code>quality</code> (optional)<ul>
+<li>the quality of the output video (1 = low, 2 = medium, 3 = high)</li>
+<li>as an orientation: the example .mp4 file has a size of 15.3 MB and the output file (no trimming, only compression) sizes are the following: 1.12 MB (low), 6.12 MB (medium), 15.26 (high)</li>
+</ul>
+</li>
+<li><code>startTime</code> (optional, default: 0)<ul>
+<li>beginning of the trimmed movie (in seconds)</li>
+</ul>
+</li>
+<li><code>endTime</code> (optional, default: duration of the video file)<ul>
+<li>end of the trimmed movie (in seconds)</li>
+</ul>
+</li>
+<li><code>success</code><ul>
+<li>callback to be invoked after successful trimming</li>
+<li>the callback is passed an object that has the following properties:<ul>
+<li><code>thumbnail</code>: the thumbnail of the video as an image blob</li>
+<li><code>videoUrl</code>: the path to the trimmed video file</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>error</code><ul>
+<li>callback to be invoked in case of an error</li>
+</ul>
+</li>
+</ul>
+<p><code>javascript
+var inputFile = Ti.Filesystem.getFile('path/to/videoFile');
+trimmer.trimVideo({
+    input: inputFile.resolve(),
+    quality: 1,
+    startTime: 0,
+    endTime: 10,
+    success: function(e) {
+        Ti.API.info('SUCCESS:');
+        Ti.API.info('path to trimmed file: '+ e.videoURL);
+    },
+    error: function(e) {
+        Ti.API.error('ERROR:');
+        Ti.API.info(JSON.stringify(e));
+    }
+});</code></p>
+<h2>Changelog</h2>
+<ul>
+<li>0.3:<ul>
+<li>adds the thumbnail of the trimmed video to the success callback</li>
+</ul>
+</li>
+<li>0.2:<ul>
+<li>adds an optional <code>quality</code> parameter to compress videos</li>
+<li>adds support for video files inside the asset library</li>
+<li>makes <code>startTime</code> and <code>endTime</code> optional</li>
+</ul>
+</li>
+<li>0.1: Initial version</li>
+</ul>
+<h2>Author</h2>
+<p><strong>Martin Tietz</strong>
+web: <a href="http://www.martin-tietz.com">http://www.martin-tietz.com</a>
+email: info@martin-tietz.com</p>
+<h2>License</h2>
+<pre><code>Copyright (c) 2013 Martin Tietz
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+</code></pre>

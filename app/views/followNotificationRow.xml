@@ -1,0 +1,9 @@
+<Alloy>
+	<TableViewRow  editable="true" id="infoEvent" className="followrow" height="70" top="15" backgroundColor="white" >
+		<ImageView id="avatarImg" width="55" height="55" borderRadius="27.5"  left="10" image="images/default.png"></ImageView>
+		<Label id="messageLbl" class="eventName" top="10" left="72">test</Label>
+		<Label id="datetimeLbl" class="datePosted" bottom="0" left="72">July 13, 2017 - 6.30 pm |</Label>
+		<Button id="acceptBtn" bottom="0" right="68"> Accept </Button>
+		<Button id="rejectBtn"  bottom="0" right="20"> Reject </Button>
+	</TableViewRow>	
+</Alloy>

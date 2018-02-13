@@ -1,0 +1,13 @@
+<Alloy>
+	<Window>
+		<Require id="navigation" src="navBar"></Require>
+		<View width="Ti.UI.FILL" height="Ti.UI.FILL" top="10%" backgroundColor="white" layout="vertical">
+			<Label class="headingText" top="10" textAlign="center">When's your birthday?</Label>
+			<ImageView top="15" width="90%" image="/images/headerDivide.png"></ImageView>
+			<Label class="lableText" top="15%" left="15%">Birthday</Label>
+			<TextField editable="false" id="dobTxt" class="infoText" value="" onClick="showDoBPicker"></TextField>
+			<View height="1" top="0" backgroundColor="86eeff" width="70%"></View>
+			<Label id="continueBirthday" height="45" width="70%" top="15%" borderRadius="22.5" backgroundColor="2dc1ee" textAlign="center">Continue</Label>
+		</View>
+	</Window>
+</Alloy>

@@ -1,0 +1,13 @@
+<Alloy>
+	<Window class="container" backgroundColor="white" top="0" width="Ti.UI.FILL" height="Ti.UI.FILL">
+		<View top="0" backgroundColor="33bdea" width="Ti.UI.FILL" height="65" id="navigBar">
+			<Label id="centrTitle" class="navBarHeading" bottom="15" >Tempo-The Live Events Network</Label>
+	    </View>
+		<WebView id="webview" top="66" bottom="51" height="Ti.UI.FILL" width="Ti.UI.FILL">	
+		</WebView>
+		<View bottom="1" width="Ti.UI.FILL" height="50" backgroundColor="white" id="controls">
+			<Label id="acceptBtn" left="10" class="button" backgroundColor="#33bdea" >Accept</Label>
+			<Label id="declineBtn" right="10" class="button" backgroundColor="#FC7C61" >Decline</Label>
+		</View>
+	</Window>
+</Alloy>

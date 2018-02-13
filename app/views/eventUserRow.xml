@@ -1,0 +1,7 @@
+<Alloy>
+	<TableViewRow top="8" backgroundColor="white" height="80">
+		<Label id="nameLbl" class="userName" textAlign="left" backgroundColor="white" width="60%" height="30" ellipsize=" Ti.UI.TEXT_ELLIPSIZE_TRUNCATE_END" left="70">Justina Hemminger</Label>
+		<ImageView id="userAvatarImg" height="Ti.UI.SIZE" borderColor="727272" borderWidth="0.5" width="50" height="50" borderRadius="25" left="10" image="/images/userPic5.png" />
+		<Button id="radioBtn" status="true" class="radioButton" right="7%"></Button>
+	</TableViewRow>
+</Alloy>

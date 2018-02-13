@@ -1,0 +1,13 @@
+
+".confirmCode" : {
+  font: {
+		fontSize:"15",
+	},
+	color:"black",
+	tintColor:"black",
+	opacity:"0.5",
+	borderColor:"777777",
+	textAlign:"center",
+	maxLength:"1",
+	keyboardType:Titanium.UI.KEYBOARD_TYPE_NUMBER_PAD
+}

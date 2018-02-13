@@ -1,0 +1,15 @@
+<Alloy>
+	<Window class="bckgrndGradient" >
+		<View id="imgView" backgroundImage="images/cameraImg.png" if="$.args.mediaType=='image'">
+			<ImageView id="closeWin" width="5%" left="15" top="40" image="images/cancel.png"></ImageView>
+			<ImageView id="postBtn" width="10%" right="10" bottom="20" image="images/postButton.png"></ImageView>
+		</View>
+		
+		<View id="videoView" if="$.args.mediaType=='video'">
+		 	<VideoPlayer mediaTypes="Titanium.Media.VIDEO_MEDIA_TYPE_VIDEO" id="videoPlayer" ns="Ti.Media" top="0" height="100%" mediaControlStyle="Titanium.Media.VIDEO_CONTROL_NONE" autoplay="true">
+            </VideoPlayer>
+            <ImageView zIndex="9999" id="postBtn" width="10%" right="10" bottom="20" image="images/postButton.png"></ImageView>
+            <ImageView zIndex="8888" id="closeWin" width="5%" left="15" top="40" image="images/cancel.png"></ImageView>
+		</View>
+	</Window>
+</Alloy>

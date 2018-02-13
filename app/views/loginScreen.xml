@@ -1,0 +1,30 @@
+<Alloy>
+	<Window>
+		<View class="bckgrndGradient" width="Ti.UI.FILL" height="Ti.UI.FILL" layout="vertical">
+			
+			<View backgroundImage="/images/loginBox.png" top="10%" width="97%" height="80%" layout="vertical">
+				<Label class="lableText" top="29%" left="15%">UserName</Label>
+				<TextField autocapitalization="false" autocorrect="false" id="usernameTxt" class="credentialText" value=""></TextField>
+				<View height="1" top="0" backgroundColor="2b7cc5" width="70%"></View>
+				<Label class="lableText" top="2%" left="15%">Confirm Password</Label>
+				<TextField  id="passwordTxt" class="credentialText" value="" passwordMask="true">
+					<ImageView id="showPass" width="10%" top="13" right="10%" image="/images/eye.png"></ImageView>
+				</TextField>
+				<View height="1" top="0" backgroundColor="2b7cc5" width="70%"></View>
+				<ImageView id="loginBtn" top="20" width="70%" image="/images/loginButton.png">
+					<Label  textAlign="center">Login</Label>
+				</ImageView>
+				<View width="Ti.UI.FILL" top="15" height="Ti.UI.SIZE">
+					<Label class="newText" color="black" left="15%">New to Tempo?</Label>
+					<Label onClick="signUpBtn" class="signUp" left="40%">Sign up</Label>
+					<Label id="frgtPwd" class="newText" color="4e4947" right="10%" >Forgot password?</Label>
+				</View>
+				<ImageView top="25" width="80%" image="/images/twitterDivide.png"></ImageView>
+				<ImageView top="35" width="70%" image="/images/twitterButton.png" onClick="loginTwitter">
+					<Label color="white" left="25%">Login using Twitter</Label>
+				</ImageView>	
+			</View>
+		</View>
+		
+	</Window>
+</Alloy>

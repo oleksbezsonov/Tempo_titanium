@@ -1,0 +1,22 @@
+
+
+".tableTitle" : {
+ 	font: {
+		fontSize:"18"	
+		},
+	color:"black",
+}
+
+".smallTitle" : {
+ 	font: {
+		fontSize:"15"	
+		},
+	color:"black",
+}
+
+".buttonText" : {
+ 	font: {
+		fontSize:"13"	
+		},
+	color:"black",
+}

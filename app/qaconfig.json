@@ -1,0 +1,23 @@
+{
+	"global": {
+		"API_URL":"http://35.167.52.234/api/",
+		"LINK_URL":"http://35.167.52.234",
+		"consumerKey": "5NAVUjm9uhzK2aKxiiloa1k1S",
+    	"consumerSecret": "UMZ23zRA2AZQZOXMLSdsDKpJO5JoPUAWoOsWYQXgk2LaQZhUVD",
+    	"GOOGLE_PLACES_API_KEY":"AIzaSyDcHTeo8XNrlab5_OfzsfmxqTUTPLg2XI4"
+	},
+	"env:development": {},
+	"env:test": {},
+	"env:production": {},
+	"os:android": {},
+	"os:blackberry": {},
+	"os:ios": {},
+	"os:mobileweb": {},
+	"os:windows": {},
+	"dependencies": {
+		"nl.fokkezb.pullToRefresh": "*",
+		"danielhanold.pickerWidget": "*",
+		"nl.fokkezb.loading":"*",
+		"de.manumaticx.photogrid": "*" 
+	}
+}
